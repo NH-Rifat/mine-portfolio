@@ -7,7 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      primary: "Playfair Display",
+      body: "Work Sans",
     },
     screens: {
       "4xsm": "280px",
@@ -23,21 +24,22 @@ module.exports = {
     },
     extend: {
       content: {
-        about: 'url("/src/assets/img/outline-text/about.svg")',
-        portfolio: 'url("/src/assets/img/outline-text/portfolio.svg")',
-        services: 'url("/src/assets/img/outline-text/services.svg")',
-        testimonials: 'url("/src/assets/img/outline-text/testimonials.svg")',
-        contact: 'url("/src/assets/img/outline-text/contact.svg")',
+        about: 'url("/assets/outline-text/about.svg")',
+        portfolio: 'url("/assets/outline-text/portfolio.svg")',
+        services: 'url("/assets/outline-text/services.svg")',
+        testimonials: 'url("/assets/outline-text/testimonials.svg")',
+        contact: 'url("/assets/outline-text/contact.svg")',
       },
       colors: {
         primary: "#00040f",
+        "primary-2": "#2A303C",
         secondary: "#00f6ff",
+        "secondary-2": "#0F172A",
+        "secondary-3": "#0B1221",
+        tertiary: "#1A1C28",
+
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
-        accent: {
-          DEFAULT: "#ac6b34",
-          hover: "#925a2b",
-        },
         paragraph: "#878e99",
       },
     },

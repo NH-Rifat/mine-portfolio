@@ -1,11 +1,11 @@
 import React from "react";
 
-const Button = ({ styles }) => (
+const Button = ({ styles, text }) => (
   <button
     type="button"
-    className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles}`}
+    className={`py-3 px-4 font-body font-semibold text-[17px] text-gray-900 bg-blue-gradient rounded-[7px] outline-none ${styles} `}
   >
-    Get Started
+    {text}
   </button>
 );
 

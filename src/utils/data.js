@@ -8,9 +8,32 @@ import {
   FiSettings,
   FiPenTool,
   FiTag,
-  FiMail,
-  FiMapPin,
 } from "react-icons/fi";
+
+import { IoLocationOutline } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
+// skills images
+import javascript from "/public/assets/tech/javascript.png";
+import typescript from "/public/assets/tech/typescript.png";
+import html from "/public/assets/tech/html.png";
+import css from "/public/assets/tech/css.png";
+import reactjs from "/public/assets/tech/reactjs.png";
+import redux from "/public/assets/tech/redux.png";
+import nodejs from "/public/assets/tech/nodejs.png";
+import mongodb from "/public/assets/tech/mongodb.png";
+import git from "/public/assets/tech/git.png";
+import figma from "/public/assets/tech/figma.png";
+import docker from "/public/assets/tech/docker.png";
+import threejs from "/public/assets/tech/threejs.svg";
+import tailwind from "/public/assets/tech/tailwind.png";
+
+// project images
+import Project1 from "/public/assets/projects/carrent.png";
+import Project2 from "/public/assets/projects/car_manufacture.jpg";
+import Project3 from "/public/assets/projects/todo_.jpg";
+import Project4 from "/public/assets/projects/travel.jpg";
+import Project5 from "/public/assets/projects/book-01.jpg";
+import Project6 from "/public/assets/projects/shopping-01.jpg";
 
 // navigation
 export const navigation = [
@@ -23,17 +46,14 @@ export const navigation = [
     href: "about",
   },
   {
+    name: "skills",
+    href: "skills",
+  },
+  {
     name: "portfolio",
     href: "portfolio",
   },
-  {
-    name: "services",
-    href: "services",
-  },
-  // {
-  //   name: 'testimonials',
-  //   href: 'testimonials',
-  // },
+
   {
     name: "contact",
     href: "contact",
@@ -226,6 +246,146 @@ export const social = [
 //   },
 // ];
 
+export const projectsData = [
+  {
+    id: 1,
+    category: "React/node js",
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project1,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 2,
+    category: "React/node js",
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project2,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 3,
+    category: "React/node js",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project3,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 4,
+    category: "React",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project4,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 5,
+    category: "React",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project5,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 6,
+    category: "React",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project6,
+    source_code_link: "https://github.com/",
+  },
+];
 // projects
 export const projectsNav = [
   {
@@ -246,32 +406,60 @@ export const projectsNav = [
 ];
 
 // skill
-// export const skills = [
-//   {
-//     image: SkillImg1,
-//   },
-//   {
-//     image: SkillImg2,
-//   },
-//   {
-//     image: SkillImg3,
-//   },
-//   {
-//     image: SkillImg4,
-//   },
-//   {
-//     image: SkillImg5,
-//   },
-//   {
-//     image: SkillImg6,
-//   },
-//   {
-//     image: SkillImg7,
-//   },
-//   {
-//     image: SkillImg8,
-//   },
-// ];
+export const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+];
 
 // services
 export const services = [
@@ -329,13 +517,13 @@ export const services = [
 // contact
 export const contact = [
   {
-    icon: <FiMail />,
+    icon: <IoIosMail />,
     title: "Have a question?",
     subtitle: "I am here to help you.",
     description: "Email me at hasanrifat@.com",
   },
   {
-    icon: <FiMapPin />,
+    icon: <IoLocationOutline />,
     title: "Current Location",
     subtitle: "Dhaka, Bangladesh",
     description: "Front-end Developer",

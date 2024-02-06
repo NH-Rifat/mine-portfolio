@@ -1,47 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  @apply font-body text-paragraph leading-6 bg-gray-200;
-} */
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply text-white;
+@layer base {
+  body {
+    @apply font-body text-paragraph leading-6 bg-gray-200;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white font-primary;
+  }
+  .section {
+    @apply py-12 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+  }
+  .subtitle {
+    @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
+  }
+  /* .btn {
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+  } */
+  .btn-lg {
+    @apply h-[54px];
+  }
+  .btn-md {
+    @apply h-[48px];
+  }
+  .input {
+    @apply bg-primary-2 text-white h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-md focus:outline focus:outline-1 focus:outline-dimBlue;
+  }
+  .textarea {
+    @apply bg-primary-2 text-white resize-none w-full outline-none p-6 rounded-md h-[200px] focus:outline focus:outline-1 focus:outline-dimBlue;
+  }
+  .active {
+    @apply text-secondary;
+  }
 }
-.section {
-  @apply py-12 lg:py-32;
-}
-.section-title {
-  @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
-}
-.subtitle {
-  @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
-}
-.btn {
-  @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
-}
-.btn-lg {
-  @apply h-[54px];
-}
-.btn-md {
-  @apply h-[48px];
-}
-.input {
-  @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
-}
-.textarea {
-  @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
-}
-.active {
-  @apply text-accent;
-} */
 
 :root {
   --black-gradient: linear-gradient(
@@ -176,4 +178,18 @@ h6 {
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+.hero-main-bg {
+  /* background: url(https://i.ibb.co/6mxmmJ7/bg.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  opacity: 0.97;
+}
+.hero-bg {
+  background-image: linear-gradient(#ffffff 1px, transparent 1px),
+    linear-gradient(to right, #ffffff 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-color: #000000;
 }
