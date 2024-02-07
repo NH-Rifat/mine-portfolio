@@ -25,7 +25,9 @@ module.exports = {
     extend: {
       content: {
         about: 'url("/assets/outline-text/about.svg")',
+        skills: 'url("/assets/outline-text/skills.png")',
         portfolio: 'url("/assets/outline-text/portfolio.svg")',
+        blogs: 'url("/assets/outline-text/blogs.png")',
         services: 'url("/assets/outline-text/services.svg")',
         testimonials: 'url("/assets/outline-text/testimonials.svg")',
         contact: 'url("/assets/outline-text/contact.svg")',

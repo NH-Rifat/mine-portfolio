@@ -3,9 +3,9 @@ import { technologies } from "@/utils/data";
 import BallCanvas from "../canvas/BallCanvas";
 const Skills = () => {
   return (
-    <section className="bg-secondary-3 py-12" id="skills">
+    <section className="bg-secondary-3 py-20" id="skills">
       <div className="flex flex-col items-center text-center">
-        <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">
+        <h2 className="section-title before:content-skills relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">
           My Skills
         </h2>
         <p className="subtitle">

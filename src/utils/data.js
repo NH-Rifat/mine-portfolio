@@ -53,6 +53,10 @@ export const navigation = [
     name: "portfolio",
     href: "portfolio",
   },
+  {
+    name: "blogs",
+    href: "blogs",
+  },
 
   {
     name: "contact",
@@ -386,6 +390,146 @@ export const projectsData = [
     source_code_link: "https://github.com/",
   },
 ];
+export const blogsData = [
+  {
+    id: 1,
+    category: "web",
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project1,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 2,
+    category: "programming",
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project2,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 3,
+    category: "others",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project3,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 4,
+    category: "web",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project4,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 5,
+    category: "programming",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project5,
+    source_code_link: "https://github.com/",
+  },
+  {
+    id: 6,
+    category: "others",
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Project6,
+    source_code_link: "https://github.com/",
+  },
+];
 // projects
 export const projectsNav = [
   {
@@ -527,5 +671,17 @@ export const contact = [
     title: "Current Location",
     subtitle: "Dhaka, Bangladesh",
     description: "Front-end Developer",
+  },
+];
+
+export const blogNavigation = [
+  {
+    name: "web",
+  },
+  {
+    name: "programming",
+  },
+  {
+    name: "others",
   },
 ];

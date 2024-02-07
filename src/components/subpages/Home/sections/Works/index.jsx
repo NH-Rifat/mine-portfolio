@@ -8,7 +8,7 @@ const Works = () => {
       <section id="portfolio" className="section bg-secondary-2 min-h-[1400px]">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">
+            <h2 className="section-title before:content-portfolio  relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">
               My latest work
             </h2>
             <p className="subtitle">
@@ -19,7 +19,7 @@ const Works = () => {
               technologies, and manage projects effectively.
             </p>
           </div>
-          <section className="grid gap-y-12 4xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-x-8 lg:gap-y-12">
+          <section className="grid gap-y-12 4xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-12 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-0 lg:gap-y-12 3xl:grid-cols-4 xl:gap-x-5 2xl:gap-x-0">
             {projectsData?.map((item, index) => {
               return <SingleProject index={index} {...item} key={item.id} />;
             })}

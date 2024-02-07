@@ -16,7 +16,7 @@ const SingleProject = ({
   const [scale, setScale] = useState(1.15);
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-secondary-3 p-5 rounded-2xl sm:w-[360px] w-full">
+      <div className="bg-primary-2 p-5 rounded-2xl sm:w-[360px] w-full">
         <Tilt scale={scale} transitionSpeed={2500}>
           <div className="relative w-full h-[230px]">
             <Image
@@ -33,7 +33,7 @@ const SingleProject = ({
                 <Image
                   src={github}
                   alt="logo"
-                  className="w-1/2 h-1/2 object-contain"
+                  className="w-1/2 h-1/2 object-cover"
                 />
               </div>
             </div>

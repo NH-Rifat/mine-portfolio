@@ -33,7 +33,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section className="section bg-secondary-3" id="contact">
+    <section className="section bg-secondary-2" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
@@ -54,7 +54,7 @@ const Contact = () => {
                     {icon}
                   </div>
                   <div>
-                    <h4 className="font-body text-xl mb-1">{title}</h4>
+                    <h4 className="font-primary text-xl mb-1">{title}</h4>
                     <p className="mb-1 text-paragraph">{subtitle}</p>
                     <p className="text-secondary font-normal ">{description}</p>
                   </div>

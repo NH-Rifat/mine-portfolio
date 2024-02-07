@@ -1,6 +1,7 @@
 import React from "react";
 import aboutIMage from "/public/assets/about/about.svg";
 import Image from "next/image";
+import { Button } from "@/components/reusable";
 
 const About = () => {
   return (
@@ -30,9 +31,10 @@ const About = () => {
                   Engineering.
                 </p>
               </div>
-              <button className="btn btn-md hover:bg-secondary-hover transition-all">
-                Contact me
-              </button>
+              <Button
+                text="Contact Me"
+                styles="btn btn-md hover:bg-secondary-hover transition-all px-8"
+              />
             </div>
           </div>
         </div>
