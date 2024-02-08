@@ -664,7 +664,7 @@ export const contact = [
     icon: <IoIosMail />,
     title: "Have a question?",
     subtitle: "I am here to help you.",
-    description: "Email me at hasanrifat@.com",
+    description: "Email me at hasanrifatr1@gmail.com",
   },
   {
     icon: <IoLocationOutline />,

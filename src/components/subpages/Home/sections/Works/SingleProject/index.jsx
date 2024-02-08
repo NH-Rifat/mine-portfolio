@@ -13,11 +13,11 @@ const SingleProject = ({
   image,
   source_code_link,
 }) => {
-  const [scale, setScale] = useState(1.15);
+  const [scale, setScale] = useState(1.08);
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-primary-2 p-5 rounded-2xl sm:w-[360px] w-full">
-        <Tilt scale={scale} transitionSpeed={2500}>
+      <Tilt scale={scale} transitionSpeed={2500}>
+        <div className="bg-primary-2 p-2 rounded-2xl sm:w-[360px] w-full">
           <div className="relative w-full h-[230px]">
             <Image
               src={image}
@@ -54,8 +54,8 @@ const SingleProject = ({
               </p>
             ))}
           </div>
-        </Tilt>
-      </div>
+        </div>
+      </Tilt>
     </motion.div>
   );
 };

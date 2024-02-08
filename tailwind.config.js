@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,8 +10,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary: "Playfair Display",
-      body: "Work Sans",
+      primary: ["var(--font-playfair-display)", ...fontFamily.sans],
+      body: ["var(--font-work-sans)", ...fontFamily.sans],
+      montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
     },
     screens: {
       "4xsm": "280px",

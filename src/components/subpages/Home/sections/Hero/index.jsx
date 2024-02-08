@@ -17,17 +17,17 @@ const Hero = () => {
                   Hey, I am Hasan Rifat! 👋
                 </p>
               </div>
-              <h1 className="text-gradient font-primary text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-5xl xl:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+              <h1 className="text-gradient font-primary text-3xl 2xsm:text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-5xl xl:text-6xl 2xl:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] xl:">
                 I Build & Develop <br /> Web Applications.
               </h1>
-              <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-lg text-center lg:text-left text-white">
+              <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-base sm:text-lg text-center lg:text-left text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing illo ad
                 labore dolor elit.
               </p>
               <Button text="Download Resume" />
             </div>
             {/* gradient start */}
-            {/* <div className="absolute z-[0] w-[20%] h-[25%] top-0 pink__gradient" /> */}
+            <div className="absolute z-[0] w-[20%] h-[25%] top-0 pink__gradient" />
             <div className="absolute z-[1] w-[50%] h-[50%] rounded-full top-full white__gradient bottom-40" />
             <div className="absolute z-[0] w-[30%] h-[30%] right-10 bottom-0 blue__gradient" />
             {/* gradient end */}

@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body text-paragraph leading-6 bg-gray-200;
+    @apply font-body text-paragraph leading-6;
   }
   h1,
   h2,
@@ -16,8 +16,11 @@
   h6 {
     @apply text-white font-primary;
   }
+  p {
+    @apply font-body;
+  }
   .section {
-    @apply py-12 lg:py-32;
+    @apply py-20 sm:py-24 lg:py-32;
   }
   .section-title {
     @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
@@ -254,27 +257,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.fade-in {
-  animation: fade-in 0.8s ease-in-out forwards;
-}
-
-.fade-out {
-  animation: fade-out 0.8s ease-in-out forwards;
+.blogs-container-animation {
+  transition: all 0.6s ease;
 }
