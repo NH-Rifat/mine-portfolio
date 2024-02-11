@@ -17,7 +17,7 @@ const SingleProject = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt scale={scale} transitionSpeed={2500}>
-        <div className="bg-primary-2 p-2 rounded-2xl sm:w-[360px] w-full">
+        <div className="bg-primary-2 p-2 rounded-2xl sm:w-[360px] w-full font-montserrat">
           <div className="relative w-full h-[230px]">
             <Image
               src={image}
@@ -40,8 +40,12 @@ const SingleProject = ({
           </div>
 
           <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-white text-[14px]">{description}</p>
+            <h3 className="text-white font-semibold text-[24px] font-montserrat">
+              {name}
+            </h3>
+            <p className="mt-2 text-white text-[14px] font-montserrat">
+              {description}
+            </p>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2">

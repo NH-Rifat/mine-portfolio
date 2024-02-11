@@ -21,8 +21,8 @@ const Hero = () => {
                 I Build & Develop <br /> Web Applications.
               </h1>
               <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-base sm:text-lg text-center lg:text-left text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing illo ad
-                labore dolor elit.
+                Passionate Frontend Developer shaping immersive user
+                experiences, pioneering web technology
               </p>
               <Button text="Download Resume" />
             </div>

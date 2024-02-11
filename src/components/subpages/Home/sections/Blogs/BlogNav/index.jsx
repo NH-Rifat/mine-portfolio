@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import { blogNavigation } from "@/utils/data";
 import { blogsData } from "@/utils/data";
 import { Fragment } from "react";
-import Image, { StaticImageData } from "next/image";
 import { Tab } from "@headlessui/react";
-import Link from "next/link";
-import { Transition } from "@headlessui/react";
 import Blog from "../Blog";
 import { motion } from "framer-motion";
 
@@ -34,7 +31,6 @@ const BlogNav = () => {
     }, 500);
   };
 
-  console.log({ blogs });
   return (
     <div>
       {/* projects nav */}

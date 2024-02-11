@@ -28,9 +28,9 @@ import threejs from "/public/assets/tech/threejs.svg";
 import tailwind from "/public/assets/tech/tailwind.png";
 
 // project images
-import Project1 from "/public/assets/projects/carrent.png";
-import Project2 from "/public/assets/projects/car_manufacture.jpg";
-import Project3 from "/public/assets/projects/todo_.jpg";
+import Project1 from "/public/assets/projects/tourfam.png";
+import Project2 from "/public/assets/projects/fishmyspot.png";
+import Project3 from "/public/assets/projects/shoprowley.png";
 import Project4 from "/public/assets/projects/travel.jpg";
 import Project5 from "/public/assets/projects/book-01.jpg";
 import Project6 from "/public/assets/projects/shopping-01.jpg";
@@ -254,7 +254,7 @@ export const projectsData = [
   {
     id: 1,
     category: "React/node js",
-    name: "Car Rent",
+    name: "Tourfam",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -277,7 +277,7 @@ export const projectsData = [
   {
     id: 2,
     category: "React/node js",
-    name: "Job IT",
+    name: "fish my spot",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -300,7 +300,7 @@ export const projectsData = [
   {
     id: 3,
     category: "React/node js",
-    name: "Trip Guide",
+    name: "Shop Rowley",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [

@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <section className="section bg-secondary-2" id="about">
         <div className="container mx-auto">
-          <div className="flex flex-col xl:flex-row gap-24 items-center">
+          <div className="flex flex-col xl:flex-row gap-14 xsm:gap-20 md:gap-24 2xl:gap-28 items-center">
             <Image
               src={aboutIMage}
               alt="logo"
@@ -19,16 +19,33 @@ const About = () => {
                 <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:xsm:block">
                   Hasan Rifat
                 </h2>
-                <p className="mb-4 ">Junior Frontend Web Developer</p>
+                <p className="mb-4 text-lg text-secondary">
+                  Frontend Developer
+                </p>
                 <hr className="mb-4 opacity-5" />
-                <p className="mb-8">
-                  I will put my sincere effort to do the best in the technology
-                  domain with state of art Excellency. I am hard-working in the
-                  individual phase with proficiency in using different
-                  technology. I am hungry to learn and determined to find core
-                  engineering beauty at best. <br />
-                  <br />I am a final year student of BSc in Computer Science &
-                  Engineering.
+                <p className="mb-8 text-slate-400 text-justify ">
+                  Hello! I&apos;m Hasan Rifat, a dedicated{" "}
+                  <span className="text-lg ">Frontend Developer </span>
+                  with a strong passion for crafting exceptional digital
+                  experiences. With{" "}
+                  <span className="text-xl  text-secondary">1.5+</span> years of
+                  experience in frontend development, I thrive on turning ideas
+                  into reality through clean code and innovative design. My
+                  journey in frontend development began with a fascination for
+                  the intersection of technology and creativity, and since then,
+                  I&apos;ve been on a mission to create user-centric solutions
+                  that leave a lasting impact. When I&apos;m not coding, you can
+                  find me exploring the latest trends in frontend development,
+                  experimenting with new technologies, or simply enjoying a good
+                  cup of coffee.
+                  {/* I will put my sincere effort to do
+                  the best in the technology domain with state of art
+                  Excellency. I am hard-working in the individual phase with
+                  proficiency in using different technology. I am hungry to
+                  learn and determined to find core engineering beauty at best.{" "} */}
+                  <br />
+                  <br />
+                  Let&apos;s connect and build something amazing together!
                 </p>
               </div>
               <Button

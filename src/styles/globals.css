@@ -4,49 +4,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply font-body text-paragraph leading-6;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-white font-primary;
-  }
-  p {
-    @apply font-body;
-  }
-  .section {
-    @apply py-20 sm:py-24 lg:py-32;
-  }
-  .section-title {
-    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
-  }
-  .subtitle {
-    @apply text-base text-paragraph mb-16 lg:mb-8 max-w-[520px];
-  }
-  /* .btn {
+/* @layer base { */
+body {
+  @apply font-body text-paragraph leading-6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-white font-primary;
+}
+p {
+  @apply font-body;
+}
+.section {
+  @apply py-10 sm:py-24 lg:py-24;
+}
+.section-title {
+  @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+}
+.subtitle {
+  @apply text-base text-slate-400 mb-16 lg:mb-8 max-w-[520px];
+}
+/* .btn {
     @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
   } */
-  .btn-lg {
-    @apply h-[54px];
-  }
-  .btn-md {
-    @apply h-[48px];
-  }
-  .input {
-    @apply bg-primary-2 text-white h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-md focus:outline focus:outline-1 focus:outline-dimBlue;
-  }
-  .textarea {
-    @apply bg-primary-2 text-white resize-none w-full outline-none p-6 rounded-md h-[200px] focus:outline focus:outline-1 focus:outline-dimBlue;
-  }
-  .active {
-    @apply text-secondary;
-  }
+.btn-lg {
+  @apply h-[54px];
 }
+.btn-md {
+  @apply h-[48px];
+}
+.input {
+  @apply bg-primary-2 text-white h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-md focus:outline focus:outline-1 focus:outline-dimBlue;
+}
+.textarea {
+  @apply bg-primary-2 text-white resize-none w-full outline-none p-6 rounded-md h-[200px] focus:outline focus:outline-1 focus:outline-dimBlue;
+}
+.active {
+  @apply text-secondary;
+}
+/* } */
 
 :root {
   --black-gradient: linear-gradient(
@@ -260,4 +260,25 @@
 
 .blogs-container-animation {
   transition: all 0.6s ease;
+}
+
+/* hover shine effect animation button */
+.button-shine {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.9s ease;
+}
+.button-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.7s ease;
+  transform: skewX(-25deg);
+}
+.button-shine:hover::before {
+  left: 125%;
 }

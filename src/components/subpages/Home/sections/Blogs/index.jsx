@@ -3,15 +3,17 @@ import BlogNav from "./BlogNav";
 
 const Blogs = () => {
   return (
-    <section id="blogs" className="section bg-secondary-3 relative">
+    <section id="blogs" className="py-10 2xsm:py-20 bg-secondary-3 relative">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-blogs  relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-1/2 before:hidden before:2xsm:block">
             My Blogs
           </h2>
           <p className="subtitle">
-            Following projects showcases my skills and experience through
-            real-world examples of my work.
+            Explore our blogs to elevate your development skills, gain clarity
+            on various topics, and become a confident developer proficient in
+            utilizing diverse technologies. Learn and persevere in discovering
+            the essence of engineering excellence at its finest.
           </p>
         </div>
         <div className="">

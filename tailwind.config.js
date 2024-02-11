@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary: ["var(--font-playfair-display)", ...fontFamily.sans],
-      body: ["var(--font-work-sans)", ...fontFamily.sans],
-      montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
+      primary: ["var(--font-playfair-display)"],
+      body: ["var(--font-work-sans)"],
+      montserrat: ["var(--font-montserrat)"],
     },
     screens: {
       "4xsm": "280px",
