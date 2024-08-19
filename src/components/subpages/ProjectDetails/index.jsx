@@ -1,92 +1,37 @@
-import Image from "next/image";
+/* eslint-disable react-hooks/exhaustive-deps */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaArrowLeft } from "react-icons/fa6";
-import tourfam from "/public/assets/projectDetails/tourfam.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import TechnologyUsed from "./TechnologyUsed";
+import KeyFeatures from "./KeyFeatures";
+import ImageGallery from "./ImageGallery";
+import Contribution from "./Contribution";
+
+import { projectDetailsData } from "./utils/projectDetailsData";
+import { Triangle } from "react-loader-spinner";
 
 const ProjectDetails = () => {
   const router = useRouter();
-  const { id } = router.query;
+  const { slug } = router.query;
+  const [data, setData] = useState({});
+  const [titleColors, setTitleColors] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  const technologies = [
-    // "React",
-    // "Next.js",
-    // "Tailwind CSS",
-    // "Node.js",
-    // "Express.js",
-    // "MongoDB",
-    {
-      name: "React",
-      color: "bg-[#00BF8F]",
-    },
-    {
-      name: "Next.js",
-      color: "bg-[#000000]",
-    },
-    {
-      name: "Tailwind CSS",
-      color: "bg-[#06B6D4]",
-    },
-    {
-      name: "Node.js",
-      color: "bg-[#3C873A]",
-    },
-    {
-      name: "Express.js",
-      color: "bg-[#000000]",
-    },
-    {
-      name: "MongoDB",
-      color: "bg-[#13AA52]",
-    },
-  ];
+  // data for the project details
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      const project = projectDetailsData?.find(
+        (project) => project?.name === slug
+      );
+      setData(project);
+      setLoading(false);
+    }, 1000);
+  }, [slug]);
 
-  const keyFeatures = [
-    {
-      title: "product search",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "product filtering",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "price negociation",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "similar product suggestion",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "shop management",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "Payment integration",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "product shipping",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-    {
-      title: "product varient",
-      content:
-        "AI Lab Granada will combine talent and cutting-edge technology and will feature technology leaders, advanced computing and a model open to startup participation. With this",
-    },
-  ];
-
-  // create color array
+  // color array for set the color of the title of the key features
   const colors = [
     "#bcd65f",
     "#62df5d",
@@ -96,103 +41,80 @@ const ProjectDetails = () => {
     "#5ab6bd",
   ];
 
-  const [titleColors, setTitleColors] = useState([]);
-
   useEffect(() => {
-    const randomColors = keyFeatures.map(
+    const randomColors = data?.keyFeatures?.map(
       () => colors[Math.floor(Math.random() * colors.length)]
     );
     setTitleColors(randomColors);
-  }, []);
+  }, [data?.keyFeatures]);
 
-  // #1A191D
-  return (
-    <div className="bg-[#1A191D] py-10">
-      <div className="container space-y-9">
-        <div className="p-5 bg-[rgba(90,89,89,0.05)] w-14 h-14 rounded-full cursor-pointer ">
+  return !loading && data?.photos?.length > 1 ? (
+    <div className="bg-[#1A191D] w-full h-full py-5 sm:py-10">
+      <div className="container mx-auto space-y-9">
+        <div
+          className="p-5 bg-[rgba(90,89,89,0.05)] w-14 h-14 rounded-full cursor-pointer "
+          title="back"
+        >
           <Link href={`/`} className=" text-center text-xl ">
             <FaArrowLeft />
           </Link>
         </div>
         <div className="space-y-2">
-          <h1 className="text-lg">Web Development</h1>
-          <Link href={`/`} className="flex items-center space-x-3">
-            <h1 className="text-5xl font-bold ">Fish My Spot</h1>
-            <div className="text-3xl">
+          <h1 className="text-lg font-body">Web Development</h1>
+          <Link
+            href={`${data?.live_link}`}
+            target="_blank"
+            className="flex items-center space-x-3"
+            title="live link"
+          >
+            <h1 className="text-3xl xsm:text-3xl sm:text-4xl lg:text-5xl font-body font-bold capitalize">
+              {data?.title}
+            </h1>
+            <div className="text-3xl text-blue-300">
               <FaExternalLinkAlt />
             </div>
           </Link>
         </div>
-        <div className="space-y-2">
-          <h1 className="text-2xl font-medium">Project Overview</h1>
-          <p className="text-slate-300 first-letter:text-2xl first-letter:font-semibold font-montserrat">
-            AI Lab Granada will combine talent and cutting-edge technology and
-            will feature technology leaders, advanced computing and a model open
-            to startup participation. With this, it seeks to develop Artificial
-            Intelligence solutions that will help increase the efficiency and
-            sustainability of companies, public authorities and society in order
-            to have a real impact in areas such as health and quality of life,
-            sustainability, the circular economy, the democratization of
-            e-commerce, the optimization of industrial processes, intelligent
-            employment or education. At the same time, it will serve as a centre
-            for the transmission and exchange of knowledge on Artificial
-            Intelligence.AI Lab Granada will combine talent and cutting-edge
-            technology and will feature technology leaders, advanced computing
-            and a model open to startup participation. With this, it seeks to
-            develop Artificial Intelligence solutions that will help increase
-            the efficiency and sustainability of companies, public authorities
-            and society in order to have a real impact in areas such as health
-            and quality of life, sustainability, the circular economy, the
-            democratization of e-commerce, the optimization of industrial
-            processes, intelligent employment or education. At the same time, it
-            will serve as a centre for the transmission and exchange of
-            knowledge on Artificial Intelligence.
+        <div className="space-y-3">
+          <h1 className="text-3xl font-medium font-body">Project Overview</h1>
+          <p className="text-slate-300 text-sm font-montserrat md:text-base leading-7 first-letter:text-2xl first-letter:font-semibold text-justify md:leading-8">
+            {data?.description}
           </p>
         </div>
-        <div className="space-y-2">
-          <h1 className="text-2xl font-medium">Key Features</h1>
-          {keyFeatures?.map((feature, index) => (
-            <div key={index} className="">
-              <li className="space-x-2 py-1.5">
-                <span
-                  className="font-medium capitalize text-base px-2 py-0.5 rounded-md text-gray-800"
-                  style={{ backgroundColor: titleColors[index] }}
-                >
-                  {feature?.title}
-                </span>
-                <span>
-                  <span className="">:</span>
-                </span>
-                <span className="text-slate-300">{feature?.content}</span>
-              </li>
-            </div>
-          ))}
-        </div>
-        <div className="">
-          <Image
-            src={tourfam}
-            alt="logo"
-            className="object-cover h-full  md:mx-auto lg:mx-0 "
+        <div className="space-y-4">
+          <KeyFeatures
+            keyFeatures={data?.keyFeatures}
+            titleColors={titleColors}
           />
         </div>
-        <div className="space-y-2">
-          <h1 className="text-2xl font-medium">Technology Used</h1>
-          <div className="flex flex-row flex-wrap">
-            {technologies?.map((tech, index) => (
-              <div
-                key={index}
-                className={`${tech?.color} m-2 rounded text-white px-1.5 py-1`}
-              >
-                {tech?.name}
-              </div>
-            ))}
+        {data?.photos && data?.photos.length > 0 && (
+          <div className="block">
+            <ImageGallery photos={data?.photos} />
           </div>
+        )}
+        <div className="space-y-4">
+          <TechnologyUsed technologies={data?.technologies} />
         </div>
-        <div className="">
-          <h1 className="text-2xl font-medium">Contribution</h1>
+        <div className="pb-10 space-y-4">
+          <Contribution
+            responsibilities={data?.responsibilities}
+            titleColors={titleColors}
+          />
           <p></p>
         </div>
       </div>
+    </div>
+  ) : (
+    <div className="text-white  h-[100vh] flex items-center justify-center">
+      <Triangle
+        visible={true}
+        height="80"
+        width="80"
+        color="#1A191D"
+        ariaLabel="triangle-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
     </div>
   );
 };

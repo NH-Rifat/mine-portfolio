@@ -253,8 +253,8 @@ export const social = [
 export const projectsData = [
   {
     id: 1,
-    category: "React/node js",
-    name: "Tourfam",
+    name: "tourfam",
+    title: "Tourfam",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -272,12 +272,12 @@ export const projectsData = [
       },
     ],
     image: Project1,
-    source_code_link: "https://github.com/",
+    live_link: "https://www.tourfam.com/",
   },
   {
     id: 2,
-    category: "React/node js",
-    name: "fish my spot",
+    name: "fish-my-spot",
+    title: "Fish My Spot",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -295,12 +295,12 @@ export const projectsData = [
       },
     ],
     image: Project2,
-    source_code_link: "https://github.com/",
+    live_link: "https://fishmyspot.com/",
   },
   {
     id: 3,
-    category: "React/node js",
-    name: "Shop Rowley",
+    name: "shop-rowely",
+    title: "Shop Rowely",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -318,12 +318,12 @@ export const projectsData = [
       },
     ],
     image: Project3,
-    source_code_link: "https://github.com/",
+    live_link: "https://www.shoprowely.com/",
   },
   {
     id: 4,
-    category: "React",
-    name: "Trip Guide",
+    name: "nav-place",
+    title: "Nav Place",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -341,53 +341,7 @@ export const projectsData = [
       },
     ],
     image: Project4,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 5,
-    category: "React",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project5,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 6,
-    category: "React",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project6,
-    source_code_link: "https://github.com/",
+    live_link: "https://nav-place-frontend-git-main-algo-projects.vercel.app/",
   },
 ];
 export const blogsData = [
@@ -488,7 +442,7 @@ export const blogsData = [
     category: "programming",
     name: "Trip Guide",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
         name: "nextjs",

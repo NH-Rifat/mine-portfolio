@@ -17,7 +17,7 @@ h6 {
   @apply text-white font-primary;
 }
 p {
-  @apply font-body;
+  @apply font-montserrat;
 }
 .section {
   @apply py-10 sm:py-24 lg:py-24;
@@ -282,3 +282,30 @@ p {
 .button-shine:hover::before {
   left: 125%;
 }
+
+/* tooltip start*/
+.project_feature {
+  position: relative;
+}
+
+.project_feature_title {
+  position: absolute;
+  z-index: 10;
+}
+
+.project_feature_title::after {
+  content: "";
+  position: absolute;
+  top: -8px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.project_feature:hover .project_feature_title {
+  opacity: 1;
+}
+
+/* tooltip end */
