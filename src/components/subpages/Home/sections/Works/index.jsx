@@ -1,7 +1,10 @@
-import React from "react";
-import { projectsData } from "@/utils/data";
-import SingleProject from "./SingleProject";
-
+import { portfolioProjects } from '@/utils/data';
+import Image from 'next/image';
+import Link from 'next/link';
+import { IoCheckmarkCircleOutline } from 'react-icons/io5';
+import { LuDot } from 'react-icons/lu';
+import { MdOutlineArrowOutward } from 'react-icons/md';
+import grainImage from '/public/assets/images/grain.jpg';
 const Works = () => {
   return (
     <>
@@ -23,11 +26,64 @@ const Works = () => {
           <div className="absolute z-[1] w-[30%] h-[30%] rounded-full top-0 white__gradient bottom-40" />
           <div className="absolute z-[0] w-[20%] h-[20%] left-10 top-0 blue__gradient" />
           {/* gradient end */}
-          <section className="grid gap-y-12 4xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-x-12 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-0 lg:gap-y-12 3xl:grid-cols-4 xl:gap-x-5 2xl:gap-x-0">
-            {projectsData?.map((item, index) => {
-              return <SingleProject index={index} {...item} key={item.id} />;
-            })}
-          </section>
+          <div className="flex flex-col gap-20 md:mt-10">
+            {portfolioProjects?.map((project) => (
+              <div
+                className="bg-secondary-2 rounded-3xl relative z-0 after:-z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20       after:pointer-events-none"
+                key={project?.title}
+              >
+                <div
+                  className="absolute inset-0 -z-10 opacity-[0.07]"
+                  style={{
+                    backgroundImage: `url(${grainImage?.src})`,
+                  }}
+                ></div>
+                <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                  <div className="px-8 lg:px-20 md:px-10 py-12">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text items-center">
+                      <span>{project?.company}</span>
+                      <span>
+                        <LuDot className="text-secondary" />
+                      </span>
+                      <span>{project?.year}</span>
+                    </div>
+                    <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                      {project?.title}
+                    </h3>
+                    <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+                    <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                      {project?.results?.map((result) => (
+                        <li
+                          key={result?.title}
+                          className="flex gap-2 text-sm text-white/50 md:text-base"
+                        >
+                          <span>
+                            <IoCheckmarkCircleOutline className="text-lg sm:text-xl" />
+                          </span>
+                          <span className="">{result?.title}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href={'/'}>
+                      <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
+                        <span>Visit Live Site</span>
+                        <MdOutlineArrowOutward className="text-lg sm:text-xl ml-2" />
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="lg:pt-12 px-8 lg:px-0">
+                    <div className="relative w-full h-[220px] sm:h-[300px] md:h-[400px] object-cover lg:h-full bg-black/20  rounded-tl-2xl lg:rounded-tr-none lg:rounded-br-2xl rounded-tr-2xl border-2 shadow-2xl border-gray-600">
+                      <Image
+                        className=" object-cover h-auto lg:absolute lg:h-auto lg:right-0 bottom-0 top-0 lg:pl-4 pt-3 sm:pt-4 px-2 sm:px-4 lg:px-0   "
+                        src={project?.image}
+                        alt={project?.title}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

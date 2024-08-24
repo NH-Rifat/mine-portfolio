@@ -250,98 +250,42 @@ export const social = [
 //   },
 // ];
 
-export const projectsData = [
+export const portfolioProjects = [
   {
-    id: 1,
-    name: "tourfam",
-    title: "Tourfam",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+    company: "Acme Corp",
+    year: "2022",
+    title: "Dark Saas Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
     ],
+    link: "https://youtu.be/4k7IdSLxh6w",
     image: Project1,
-    live_link: "https://www.tourfam.com/",
   },
   {
-    id: 2,
-    name: "fish-my-spot",
-    title: "Fish My Spot",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+    company: "Innovative Co",
+    year: "2021",
+    title: "Light Saas Landing Page",
+    results: [
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
     ],
+    link: "https://youtu.be/7hi5zwO75yc",
     image: Project2,
-    live_link: "https://fishmyspot.com/",
   },
   {
-    id: 3,
-    name: "shop-rowely",
-    title: "Shop Rowely",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "AI Startup Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
     ],
+    link: "https://youtu.be/Z7I5uSRHMHg",
     image: Project3,
-    live_link: "https://www.shoprowely.com/",
-  },
-  {
-    id: 4,
-    name: "nav-place",
-    title: "Nav Place",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project4,
-    live_link: "https://nav-place-frontend-git-main-algo-projects.vercel.app/",
   },
 ];
 export const blogsData = [
