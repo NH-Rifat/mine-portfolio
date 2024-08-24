@@ -1,5 +1,5 @@
-import { Geometry } from "./Geometry";
-import * as THREE from "three";
+import * as THREE from 'three';
+import { Geometry } from './Geometry';
 export function Geometries() {
   const geometries = [
     {
@@ -30,9 +30,9 @@ export function Geometries() {
   ];
 
   const soundEffects = [
-    new Audio("/public/assets/sounds/hit2.ogg"),
-    new Audio("/public/assets/sounds/hit3.ogg"),
-    new Audio("/public/assets/sounds/hit4.ogg"),
+    new Audio('./public/assets/sounds/hit2.ogg'),
+    new Audio('./public/assets/sounds/hit3.ogg'),
+    new Audio('./public/assets/sounds/hit4.ogg'),
   ];
 
   const materials = [
