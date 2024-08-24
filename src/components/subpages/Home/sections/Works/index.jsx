@@ -2,6 +2,7 @@ import { portfolioProjects } from '@/utils/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoCheckmarkCircleOutline } from 'react-icons/io5';
+import { LuDot } from 'react-icons/lu';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import grainImage from '/public/assets/images/grain.jpg';
 const Works = () => {
@@ -39,9 +40,11 @@ const Works = () => {
                 ></div>
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="px-8 lg:px-20 md:px-10 py-12">
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text items-center">
                       <span>{project?.company}</span>
-                      <span>$bull;</span>
+                      <span>
+                        <LuDot className="text-secondary" />
+                      </span>
                       <span>{project?.year}</span>
                     </div>
                     <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
