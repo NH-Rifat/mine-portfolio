@@ -1,25 +1,27 @@
-import React, { useEffect, useState } from "react";
-import Nav from "./Nav";
-import Socials from "./Socials";
-import NavMobile from "./NavMobile";
+import { useEffect, useState } from 'react';
+import Nav from './Nav';
+import NavMobile from './NavMobile';
+import Socials from './Socials';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
   return (
     <header
       className={`${
-        bg ? "bg-tertiary h-20" : "h-24"
+        bg ? 'bg-tertiary h-20' : 'h-24'
       } flex items-center fixed top-0 w-full text-white font-body  transition-all duration-300 z-30`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
-        <a href="#">Hasan Rifat</a>
+        <a href="#" className="text-secondary">
+          Hasan Rifat
+        </a>
         {/* nav */}
         <div className="hidden lg:block">
           <Nav />
