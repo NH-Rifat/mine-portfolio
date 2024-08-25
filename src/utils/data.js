@@ -288,9 +288,9 @@ export const portfolioProjects = [
 export const blogsData = [
   {
     id: 1,
-    title: '3D Solar System Planets to Explore',
-    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
-    img: '/assets/blogs/p1.svg',
+    title: 'Understanding the React',
+    des: 'Lean React fundamentals, hooks, and context API to build a fully functional app with the latest tech stack.',
+    img: '/assets/blogs/basic_react01.jpg',
     iconLists: [
       '/assets/blogs/re.svg',
       '/assets/blogs/tail.svg',
@@ -298,13 +298,13 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/fm.svg',
     ],
-    link: '/ui.earth.com',
+    link: '/',
   },
   {
     id: 2,
-    title: 'Yoom - Video Conferencing App',
-    des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
-    img: '/assets/blogs/p2.svg',
+    title: 'Beyond things the React',
+    des: 'Discover the react beyond basics, under the hood, and advanced concepts to build a modern web app.',
+    img: '/assets/blogs/react-advance.jpg',
     iconLists: [
       '/assets/blogs/next.svg',
       '/assets/blogs/tail.svg',
@@ -312,12 +312,12 @@ export const blogsData = [
       '/assets/blogs/stream.svg',
       '/assets/blogs/c.svg',
     ],
-    link: '/ui.yoom.com',
+    link: '/',
   },
   {
     id: 3,
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    title: 'Fundamentals of Javascript',
+    des: 'Master the JavaScript fundamentals, ES6, and ES7 features to build a modern web app with pure JavaScript.',
     img: '/assets/blogs/p3.svg',
     iconLists: [
       '/assets/blogs/re.svg',
@@ -326,12 +326,12 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/c.svg',
     ],
-    link: '/ui.aiimg.com',
+    link: '/',
   },
   {
     id: 4,
-    title: 'Animated Apple Iphone 3D Website',
-    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
+    title: 'JavaScript the big picture',
+    des: 'Discover the JavaScript execution, hoisting, closures, scopes, and prototype-based inheritance in depth.',
     img: '/assets/blogs/p4.svg',
     iconLists: [
       '/assets/blogs/next.svg',
@@ -340,7 +340,7 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/gsap.svg',
     ],
-    link: '/ui.apple.com',
+    link: '/',
   },
 ];
 // projects
