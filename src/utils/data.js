@@ -1,66 +1,63 @@
 //  icons
 import {
-  FiYoutube,
-  FiInstagram,
-  FiGithub,
   FiDribbble,
+  FiGithub,
+  FiInstagram,
   FiLayout,
-  FiSettings,
   FiPenTool,
+  FiSettings,
   FiTag,
-} from "react-icons/fi";
+  FiYoutube,
+} from 'react-icons/fi';
 
-import { IoLocationOutline } from "react-icons/io5";
-import { IoIosMail } from "react-icons/io";
+import { IoIosMail } from 'react-icons/io';
+import { IoLocationOutline } from 'react-icons/io5';
 // skills images
-import javascript from "/public/assets/tech/javascript.png";
-import typescript from "/public/assets/tech/typescript.png";
-import html from "/public/assets/tech/html.png";
-import css from "/public/assets/tech/css.png";
-import reactjs from "/public/assets/tech/reactjs.png";
-import redux from "/public/assets/tech/redux.png";
-import nodejs from "/public/assets/tech/nodejs.png";
-import mongodb from "/public/assets/tech/mongodb.png";
-import git from "/public/assets/tech/git.png";
-import figma from "/public/assets/tech/figma.png";
-import docker from "/public/assets/tech/docker.png";
-import threejs from "/public/assets/tech/threejs.svg";
-import tailwind from "/public/assets/tech/tailwind.png";
+import css from '/public/assets/tech/css.png';
+import docker from '/public/assets/tech/docker.png';
+import figma from '/public/assets/tech/figma.png';
+import git from '/public/assets/tech/git.png';
+import html from '/public/assets/tech/html.png';
+import javascript from '/public/assets/tech/javascript.png';
+import mongodb from '/public/assets/tech/mongodb.png';
+import nodejs from '/public/assets/tech/nodejs.png';
+import reactjs from '/public/assets/tech/reactjs.png';
+import redux from '/public/assets/tech/redux.png';
+import tailwind from '/public/assets/tech/tailwind.png';
+import threejs from '/public/assets/tech/threejs.svg';
+import typescript from '/public/assets/tech/typescript.png';
 
 // project images
-import Project1 from "/public/assets/projects/tourfam.png";
-import Project2 from "/public/assets/projects/fishmyspot.png";
-import Project3 from "/public/assets/projects/shoprowley.png";
-import Project4 from "/public/assets/projects/travel.jpg";
-import Project5 from "/public/assets/projects/book-01.jpg";
-import Project6 from "/public/assets/projects/shopping-01.jpg";
+import Project2 from '/public/assets/projects/fishmyspot.png';
+import Project3 from '/public/assets/projects/shoprowley.png';
+import Project1 from '/public/assets/projects/tourfam.png';
 
 // navigation
 export const navigation = [
   {
-    name: "home",
-    href: "home",
+    name: 'home',
+    href: 'home',
   },
   {
-    name: "about",
-    href: "about",
+    name: 'about',
+    href: 'about',
   },
   {
-    name: "skills",
-    href: "skills",
+    name: 'skills',
+    href: 'skills',
   },
   {
-    name: "portfolio",
-    href: "portfolio",
+    name: 'portfolio',
+    href: 'portfolio',
   },
   {
-    name: "blogs",
-    href: "blogs",
+    name: 'blogs',
+    href: 'blogs',
   },
 
   {
-    name: "contact",
-    href: "contact",
+    name: 'contact',
+    href: 'contact',
   },
 ];
 
@@ -68,19 +65,19 @@ export const navigation = [
 export const social = [
   {
     icon: <FiYoutube />,
-    href: "",
+    href: '',
   },
   {
     icon: <FiInstagram />,
-    href: "",
+    href: '',
   },
   {
     icon: <FiGithub />,
-    href: "",
+    href: '',
   },
   {
     icon: <FiDribbble />,
-    href: "",
+    href: '',
   },
 ];
 
@@ -252,253 +249,171 @@ export const social = [
 
 export const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: 'Acme Corp',
+    year: '2022',
+    title: 'Dark Saas Landing Page',
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: 'Enhanced user experience by 40%' },
+      { title: 'Improved site speed by 50%' },
+      { title: 'Increased mobile traffic by 35%' },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: 'https://youtu.be/4k7IdSLxh6w',
     image: Project1,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: 'Innovative Co',
+    year: '2021',
+    title: 'Light Saas Landing Page',
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: 'Boosted sales by 20%' },
+      { title: 'Expanded customer reach by 35%' },
+      { title: 'Increased brand awareness by 15%' },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: 'https://youtu.be/7hi5zwO75yc',
     image: Project2,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: 'Quantum Dynamics',
+    year: '2023',
+    title: 'AI Startup Landing Page',
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: 'Enhanced user experience by 40%' },
+      { title: 'Improved site speed by 50%' },
+      { title: 'Increased mobile traffic by 35%' },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: 'https://youtu.be/Z7I5uSRHMHg',
     image: Project3,
   },
 ];
 export const blogsData = [
   {
     id: 1,
-    category: "web",
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+    title: '3D Solar System Planets to Explore',
+    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
+    img: '/assets/blogs/p1.svg',
+    iconLists: [
+      '/assets/blogs/re.svg',
+      '/assets/blogs/tail.svg',
+      '/assets/blogs/ts.svg',
+      '/assets/blogs/three.svg',
+      '/assets/blogs/fm.svg',
     ],
-    image: Project1,
-    source_code_link: "https://github.com/",
+    link: '/ui.earth.com',
   },
   {
     id: 2,
-    category: "programming",
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+    title: 'Yoom - Video Conferencing App',
+    des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
+    img: '/assets/blogs/p2.svg',
+    iconLists: [
+      '/assets/blogs/next.svg',
+      '/assets/blogs/tail.svg',
+      '/assets/blogs/ts.svg',
+      '/assets/blogs/stream.svg',
+      '/assets/blogs/c.svg',
     ],
-    image: Project2,
-    source_code_link: "https://github.com/",
+    link: '/ui.yoom.com',
   },
   {
     id: 3,
-    category: "others",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+    title: 'AI Image SaaS - Canva Application',
+    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    img: '/assets/blogs/p3.svg',
+    iconLists: [
+      '/assets/blogs/re.svg',
+      '/assets/blogs/tail.svg',
+      '/assets/blogs/ts.svg',
+      '/assets/blogs/three.svg',
+      '/assets/blogs/c.svg',
     ],
-    image: Project3,
-    source_code_link: "https://github.com/",
+    link: '/ui.aiimg.com',
   },
   {
     id: 4,
-    category: "web",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+    title: 'Animated Apple Iphone 3D Website',
+    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
+    img: '/assets/blogs/p4.svg',
+    iconLists: [
+      '/assets/blogs/next.svg',
+      '/assets/blogs/tail.svg',
+      '/assets/blogs/ts.svg',
+      '/assets/blogs/three.svg',
+      '/assets/blogs/gsap.svg',
     ],
-    image: Project4,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 5,
-    category: "programming",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project5,
-    source_code_link: "https://github.com/",
-  },
-  {
-    id: 6,
-    category: "others",
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project6,
-    source_code_link: "https://github.com/",
+    link: '/ui.apple.com',
   },
 ];
 // projects
 export const projectsNav = [
   {
-    name: "all",
+    name: 'all',
   },
   {
-    name: "React/node js",
+    name: 'React/node js',
   },
   {
-    name: "React",
+    name: 'React',
   },
   {
-    name: "JS/API",
+    name: 'JS/API',
   },
   {
-    name: "UI/UX Design",
+    name: 'UI/UX Design',
   },
 ];
 
 // skill
 export const technologies = [
   {
-    name: "HTML 5",
+    name: 'HTML 5',
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: 'CSS 3',
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: 'Three JS',
     icon: threejs,
   },
   {
-    name: "git",
+    name: 'git',
     icon: git,
   },
   {
-    name: "figma",
+    name: 'figma',
     icon: figma,
   },
   {
-    name: "docker",
+    name: 'docker',
     icon: docker,
   },
 ];
@@ -507,27 +422,27 @@ export const technologies = [
 export const services = [
   {
     icon: <FiLayout />,
-    name: "Front-end Development",
+    name: 'Front-end Development',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
   {
     icon: <FiSettings />,
-    name: "Back-end Development",
+    name: 'Back-end Development',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
   {
     icon: <FiPenTool />,
-    name: "Problem Solving",
+    name: 'Problem Solving',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
   {
     icon: <FiTag />,
-    name: "Core Engineering",
+    name: 'Core Engineering',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
   },
 ];
 
@@ -560,26 +475,26 @@ export const services = [
 export const contact = [
   {
     icon: <IoIosMail />,
-    title: "Have a question?",
-    subtitle: "I am here to help you.",
-    description: "Email me at hasanrifatr1@gmail.com",
+    title: 'Have a question?',
+    subtitle: 'I am here to help you.',
+    description: 'Email me at hasanrifatr1@gmail.com',
   },
   {
     icon: <IoLocationOutline />,
-    title: "Current Location",
-    subtitle: "Dhaka, Bangladesh",
-    description: "Front-end Developer",
+    title: 'Current Location',
+    subtitle: 'Dhaka, Bangladesh',
+    description: 'Front-end Developer',
   },
 ];
 
 export const blogNavigation = [
   {
-    name: "web",
+    name: 'web',
   },
   {
-    name: "programming",
+    name: 'programming',
   },
   {
-    name: "others",
+    name: 'others',
   },
 ];
