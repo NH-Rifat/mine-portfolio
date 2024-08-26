@@ -6,10 +6,8 @@ export default function SectionHeader({ eyebrow, title, description }) {
           {eyebrow}
         </p> */}
       </div>
-      <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">
-        {title}
-      </h2>
-      <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">
+      <h2 className=" text-3xl text-center mt-6 md:text-5xl">{title}</h2>
+      <p className="text-center font-montserrat text-white/60 mt-4 md:text-lg  max-w-md mx-auto">
         {description}
       </p>
     </div>

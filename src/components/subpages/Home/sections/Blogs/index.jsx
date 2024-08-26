@@ -12,7 +12,7 @@ const Blogs = () => {
           <h2 className="section-title before:content-blogs  relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-1/2 before:hidden before:2xsm:block">
             My Blogs
           </h2>
-          <p className="subtitle">
+          <p className="subtitle font-montserrat">
             Explore our blogs to elevate your development skills, gain clarity
             on various topics, and become a confident developer proficient in
             utilizing diverse technologies. Learn and persevere in discovering
@@ -52,11 +52,11 @@ const Blogs = () => {
                           className="object-cover z-10 rounded-xl origin-bottom-left rotate-[3.1deg] scale-[0.96] rounded-bl-3xl rounded-br-3xl brightness-90 opacity-85"
                         />
                       </div>
-                      <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                      <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 font-sans">
                         {item.title}
                       </h1>
                       <p
-                        className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                        className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 font-montserrat"
                         style={{
                           color: '#BEC1DD',
                           margin: '1vh 0',
@@ -86,7 +86,7 @@ const Blogs = () => {
                         </div>
 
                         <div className="flex justify-center items-center">
-                          <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                          <p className="flex lg:text-xl md:text-xs text-sm text-purple font-sans bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent">
                             Check Live Site
                           </p>
                           <FaLocationArrow className="ms-3" color="#CBACF9" />

@@ -11,10 +11,10 @@ const Works = () => {
       <section id="portfolio" className="section bg-secondary-2  relative">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title before:content-portfolio  relative before:absolute before:opacity-40 before:-top-[2rem]  before:-left-[108%] before:lg:-left-3/4  before:hidden before:sm:block">
+            <h2 className="section-title before:content-portfolio  relative before:absolute before:opacity-40 before:-top-[2rem]  before:-left-[108%] before:lg:-left-3/4  before:hidden before:sm:block ">
               My latest work
             </h2>
-            <p className="subtitle ">
+            <p className="subtitle font-montserrat">
               Following projects showcases my skills and experience through
               real-world examples of my work. Each project is briefly described
               with links to code repositories and live demos in it. It reflects
@@ -44,17 +44,17 @@ const Works = () => {
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="px-8 lg:px-20 md:px-10 py-12">
                     <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text items-center">
-                      <span>{project?.company}</span>
+                      <span className="font-sans">{project?.company}</span>
                       <span>
                         <LuDot className="text-secondary" />
                       </span>
-                      <span>{project?.year}</span>
+                      <span className="font-sans">{project?.year}</span>
                     </div>
-                    <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                    <h3 className="font-sans text-2xl mt-2 md:mt-5 md:text-4xl">
                       {project?.title}
                     </h3>
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                    <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                    <ul className="flex flex-col gap-4 mt-4 md:mt-5 font-montserrat">
                       {project?.results?.map((result) => (
                         <li
                           key={result?.title}
@@ -68,7 +68,7 @@ const Works = () => {
                       ))}
                     </ul>
                     <Link href={'/'}>
-                      <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
+                      <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6 font-montserrat">
                         <span>Visit Live Site</span>
                         <MdOutlineArrowOutward className="text-lg sm:text-xl ml-2" />
                       </button>

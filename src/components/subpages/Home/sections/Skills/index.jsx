@@ -1,8 +1,10 @@
 import { Card, SectionHeader } from '@/components/reusable';
+import { technologies } from '@/utils/data';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useRef } from 'react';
 import CardHeader from './CardHeader';
 import JavascriptIcon from '/public/assets/icons/html5.svg';
-
 import BookCover from '/public/assets/images/book-cover.png';
 import mapImage from '/public/assets/images/map.png';
 import smileEmoji from '/public/assets/images/memoji-smile.png';
@@ -16,58 +18,58 @@ const toolboxItems = [
     title: 'React',
     iconType: JavascriptIcon,
   },
-  {
-    title: 'Node',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Express',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'MongoDB',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Firebase',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'HTML',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'CSS',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Sass',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Tailwind',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Git',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Github',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Figma',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Photoshop',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'Illustrator',
-    iconType: JavascriptIcon,
-  },
+  // {
+  //   title: 'Node',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Express',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'MongoDB',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Firebase',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'HTML',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'CSS',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Sass',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Tailwind',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Git',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Github',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Figma',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Photoshop',
+  //   iconType: JavascriptIcon,
+  // },
+  // {
+  //   title: 'Illustrator',
+  //   iconType: JavascriptIcon,
+  // },
 ];
 
 const hobbies = [
@@ -220,10 +222,11 @@ const hobbies = [
 ];
 
 const Skills = () => {
+  const constraintRef = useRef(null);
   return (
     <section className="bg-secondary-3 py-10 xsm:py-20 relative" id="skills">
       <div className="flex flex-col items-center text-center">
-        <h2 className="section-title before:content-skills relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-[35%] before:hidden before:xsm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent uppercase font-semibold font-serif">
+        <h2 className="section-title before:content-skills relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-[35%] before:hidden before:xsm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent uppercase font-semibold">
           My Skills
         </h2>
         {/* <p className="subtitle">
@@ -276,32 +279,40 @@ const Skills = () => {
                 digital experiences"
                   className=""
                 />
-                <div className="flex mt-6 [mask-image:linear-gradient(to_right,transparent,black_50%,transparent)]">
-                  <div className="flex flex-none py-0.5 gap-6 animate-move-left [animation-duration:30s]">
-                    {[...new Array(2)].map((_, index) => (
-                      <div key={index}>
-                        {toolboxItems.map((item, index) => (
-                          <div
-                            key={index}
-                            className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg "
-                          >
-                            {/* <TechIcon component={item.iconType} /> */}
-                            <span className="font-semibold">{item.title}</span>
-                          </div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex mt-6 [mask-image:linear-gradient(to_right,transparent,black_50%,transparent)] ">
-                  <div className="flex flex-none py-0.5 gap-6 -translate-x-1/2">
-                    {toolboxItems.map((item, index) => (
+                <div className="flex [mask-image:linear-gradient(to_right,transparent,black_50%,transparent)]">
+                  <div className="flex flex-none py-0.5 gap-x-3 animate-move-left [animation-duration:30s]">
+                    {/* {[...new Array(2)].map((_, index) => ( */}
+                    {/* <div key={index}> */}
+                    {technologies?.map((item, index) => (
                       <div
                         key={index}
                         className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg "
                       >
-                        {/* <TechIcon component={item.iconType} /> */}
-                        <span className="font-semibold">{item.title}</span>
+                        <Image
+                          src={item.icon}
+                          alt="Technology Icon"
+                          className="size-10"
+                          layout="fixed"
+                        />
+                      </div>
+                    ))}
+                    {/* </div> */}
+                    {/* ))} */}
+                  </div>
+                </div>
+                <div className="flex mt-5 [mask-image:linear-gradient(to_right,transparent,black_50%,transparent)] ">
+                  <div className="flex flex-none py-0.5 gap-x-3 -translate-x-1/2 animate-move-right [animation-duration:30s]">
+                    {technologies.map((item, index) => (
+                      <div
+                        key={index}
+                        className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg "
+                      >
+                        <Image
+                          src={item.icon}
+                          alt="Technology Icon"
+                          className="size-10"
+                          layout="fixed"
+                        />
                       </div>
                     ))}
                   </div>
@@ -315,21 +326,23 @@ const Skills = () => {
                   description="Explore my interests and hobbies beyond the realm of technology"
                   className="px-6 py-6"
                 />
-                <div className="relative px-2">
-                  {hobbies.map((hobby, index) => (
-                    <div
+                <div className="relative px-2 flex-1" ref={constraintRef}>
+                  {hobbies?.map((hobby, index) => (
+                    <motion.dev
                       key={index}
                       className="inline-flex items-center m-1 gap-2 px-4 md:px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
                       style={{
                         left: hobby.left,
                         top: hobby.top,
                       }}
+                      drag
+                      dragConstraints={constraintRef}
                     >
                       <span className="font-medium text-gray-950 ">
                         {hobby.title}
                       </span>
                       <span>{hobby.emoji}</span>
-                    </div>
+                    </motion.dev>
                   ))}
                 </div>
               </Card>

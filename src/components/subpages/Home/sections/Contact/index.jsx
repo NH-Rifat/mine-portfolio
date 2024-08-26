@@ -1,11 +1,10 @@
-import React from "react";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 // import contact data
-import { toast } from "react-toastify";
-import { contact } from "@/utils/data";
-import { Button } from "@/components/reusable";
+import { Button } from '@/components/reusable';
+import { contact } from '@/utils/data';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   // email sent to the owner email......
@@ -16,14 +15,14 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_28inj8p",
-        "template_6xyvxpo",
+        'service_28inj8p',
+        'template_6xyvxpo',
         form.current,
-        "e9TCiEGAqfVM21gKW"
+        'e9TCiEGAqfVM21gKW'
       )
       .then(
         (result) => {
-          toast.success("Email sent successfully to Hasan Rifat");
+          toast.success('Email sent successfully to Hasan Rifat');
           console.log(result.text);
         },
         (error) => {
@@ -39,7 +38,7 @@ const Contact = () => {
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:sm:block">
             Contact me
           </h2>
-          <p className="subtitle">
+          <p className="subtitle font-montserrat">
             Get in touch with me! I&apos;am here to answer any questions,
             discuss potential collaborations, or just chat about all things
             tech. Drop me a message and let&apos;s start building something
@@ -51,12 +50,12 @@ const Contact = () => {
             {contact?.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
-                <div className="flex flex-row gap-x-1" key={index}>
+                <div className="flex flex-row gap-x-1 font-sans" key={index}>
                   <div className="text-secondary rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                     {icon}
                   </div>
                   <div>
-                    <h4 className=" text-xl mb-1">{title}</h4>
+                    <h4 className=" text-xl mb-1 font-sans">{title}</h4>
                     <p className="mb-1 text-paragraph font-body ">{subtitle}</p>
                     <p className="text-secondary font-body ">{description}</p>
                   </div>
@@ -65,7 +64,7 @@ const Contact = () => {
             })}
           </div>
           <form
-            className="space-y-8 w-full md:w-5/6 xl:w-full max-w-[780px]"
+            className="space-y-8 w-full md:w-5/6 xl:w-full max-w-[780px] font-sans"
             ref={form}
             onSubmit={sendEmail}
           >
