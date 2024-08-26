@@ -1,8 +1,7 @@
-import * as THREE from "three";
-import { Canvas } from "@react-three/fiber";
-import { ContactShadows, Environment } from "@react-three/drei";
-import { Suspense } from "react";
-import { Geometries } from "./Geometrics";
+import { ContactShadows, Environment } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { Suspense } from 'react';
+import { Geometries } from './Geometrics';
 
 export function Shapes() {
   return (

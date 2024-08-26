@@ -49,7 +49,7 @@ const Blogs = () => {
                           //   width: '80%',
                           //   height: '80%',
                           // }}
-                          className="object-cover z-10 rounded origin-bottom-left rotate-[3.1deg] scale-[0.96] rounded-bl-3xl rounded-br-3xl"
+                          className="object-cover z-10 rounded-xl origin-bottom-left rotate-[3.1deg] scale-[0.96] rounded-bl-3xl rounded-br-3xl brightness-90 opacity-85"
                         />
                       </div>
                       <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">

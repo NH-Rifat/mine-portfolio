@@ -288,23 +288,24 @@ export const portfolioProjects = [
 export const blogsData = [
   {
     id: 1,
-    title: 'Understanding the React',
-    des: 'Lean React fundamentals, hooks, and context API to build a fully functional app with the latest tech stack.',
-    img: '/assets/blogs/basic_react01.jpg',
+    title: 'JavaScript the big picture',
+    des: 'Discover the JavaScript execution, hoisting, closures, scopes, and prototype-based inheritance in depth.',
+    img: '/assets/blogs/js-adv.jpg',
     iconLists: [
-      '/assets/blogs/re.svg',
+      '/assets/blogs/next.svg',
       '/assets/blogs/tail.svg',
       '/assets/blogs/ts.svg',
       '/assets/blogs/three.svg',
-      '/assets/blogs/fm.svg',
+      '/assets/blogs/gsap.svg',
     ],
     link: '/',
   },
+
   {
     id: 2,
     title: 'Beyond things the React',
     des: 'Discover the react beyond basics, under the hood, and advanced concepts to build a modern web app.',
-    img: '/assets/blogs/react-advance.jpg',
+    img: '/assets/blogs/react-adv.jpg',
     iconLists: [
       '/assets/blogs/next.svg',
       '/assets/blogs/tail.svg',
@@ -318,7 +319,7 @@ export const blogsData = [
     id: 3,
     title: 'Fundamentals of Javascript',
     des: 'Master the JavaScript fundamentals, ES6, and ES7 features to build a modern web app with pure JavaScript.',
-    img: '/assets/blogs/p3.svg',
+    img: '/assets/blogs/js-fund.jpg',
     iconLists: [
       '/assets/blogs/re.svg',
       '/assets/blogs/tail.svg',
@@ -330,15 +331,15 @@ export const blogsData = [
   },
   {
     id: 4,
-    title: 'JavaScript the big picture',
-    des: 'Discover the JavaScript execution, hoisting, closures, scopes, and prototype-based inheritance in depth.',
-    img: '/assets/blogs/p4.svg',
+    title: 'Understanding the React',
+    des: 'Lean React fundamentals, hooks, and context API to build a fully functional app with the latest tech stack.',
+    img: '/assets/blogs/react-fund01.png',
     iconLists: [
-      '/assets/blogs/next.svg',
+      '/assets/blogs/re.svg',
       '/assets/blogs/tail.svg',
       '/assets/blogs/ts.svg',
       '/assets/blogs/three.svg',
-      '/assets/blogs/gsap.svg',
+      '/assets/blogs/fm.svg',
     ],
     link: '/',
   },
@@ -359,6 +360,70 @@ export const projectsNav = [
   },
   {
     name: 'UI/UX Design',
+  },
+];
+
+export const gridItems = [
+  {
+    id: 1,
+    title: 'I prioritize client collaboration, fostering open communication ',
+    description: '',
+    className: 'lg:col-span-3 md:col-span-6 md:row-span-2 ',
+    imgClassName: 'w-full h-full',
+    titleClassName: 'justify-end',
+    img: '/assets/blogs/b1.svg',
+    spareImg: '',
+  },
+  {
+    id: 2,
+    title: "I'm very flexible with time zone communications",
+    description: '',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
+    imgClassName: '',
+    titleClassName: 'justify-start',
+    img: '',
+    spareImg: '',
+  },
+  {
+    id: 3,
+    title: 'My tech stack',
+    description: 'I constantly try to improve',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
+    imgClassName: '',
+    titleClassName: 'justify-center',
+    img: '',
+    spareImg: '',
+  },
+  {
+    id: 4,
+    title: 'Tech enthusiast with a passion for development.',
+    description: '',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
+    imgClassName: '',
+    titleClassName: 'justify-start',
+    img: '/assets/blogs/grid.svg',
+    spareImg: '/assets/blogs/b4.svg',
+  },
+
+  {
+    id: 5,
+    title: 'Currently building a blog site',
+    description: 'The Inside Scoop',
+    className: 'md:col-span-3 md:row-span-2',
+    imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
+    titleClassName: 'justify-center md:justify-start lg:justify-center',
+    img: '/assets/blogs/b5.svg',
+    spareImg: '/assets/blogs/grid.svg',
+  },
+  {
+    id: 6,
+    title: 'Do you want to start a project together?',
+    description: '',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
+    imgClassName: '',
+    titleClassName: 'justify-center md:max-w-full max-w-60 text-center',
+    img: '',
+    spareImg: '',
   },
 ];
 
