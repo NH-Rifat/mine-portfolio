@@ -1,10 +1,10 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useRef } from "react";
-import PoolImgSlider from "./PoolImgSlider";
-import useClickOutSide from "../../../../../../hook/closeSelectBoxOutsiceClick";
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRef } from 'react';
+import useClickOutSide from '../../../../../../hook/closeSelectBoxOutsiceClick';
+import PoolImgSlider from './PoolImgSlider';
 
 const PhotoModal = ({ showModal, setShowModal, photos }) => {
-  const dropdown = useRef(null);
+  const dropdown = useRef();
   useClickOutSide(dropdown, () => setShowModal(false));
 
   const backdrop = {

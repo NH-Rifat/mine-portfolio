@@ -1,6 +1,5 @@
-import { Button } from "@/components/reusable";
-import React from "react";
-import { Shapes } from "./Shapes";
+import { Button } from '@/components/reusable';
+import { Shapes } from './Shapes';
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
               <h1 className="text-gradient font-primary text-3xl 2xsm:text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-5xl xl:text-6xl 2xl:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] xl:">
                 I Build & Develop <br /> Web Applications.
               </h1>
-              <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-base sm:text-lg text-center lg:text-left text-white">
+              <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-base sm:text-lg text-center lg:text-left text-white font-montserrat">
                 Passionate Frontend Developer shaping immersive user
                 experiences, pioneering web technology
               </p>

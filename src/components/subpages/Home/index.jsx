@@ -1,22 +1,21 @@
-import React from "react";
-import Header from "./sections/Header";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Skills from "./sections/Skills";
-import Works from "./sections/Works";
-import Contact from "./sections/Contact";
-import Blogs from "./sections/Blogs";
+import About from './sections/About';
+import Blogs from './sections/Blogs';
+import Contact from './sections/Contact';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import Skills from './sections/Skills';
+import Works from './sections/Works';
 
 const Home = () => {
   return (
     <div>
-      <Header></Header>
-      <Hero></Hero>
-      <About></About>
-      <Skills></Skills>
-      <Works></Works>
-      <Blogs></Blogs>
-      <Contact></Contact>
+      <Header />
+      <Hero />
+      <About />
+      <Skills />
+      <Works />
+      <Blogs />
+      <Contact />
     </div>
   );
 };

@@ -1,7 +1,6 @@
-import React from "react";
-import aboutIMage from "/public/assets/about/about.svg";
-import Image from "next/image";
-import { Button } from "@/components/reusable";
+import { Button } from '@/components/reusable';
+import Image from 'next/image';
+import aboutIMage from '/public/assets/about/about.svg';
 
 const About = () => {
   return (
@@ -16,18 +15,18 @@ const About = () => {
             />
             <div className="flex flex-col items-center text-center zsm:items-start xsm:text-left">
               <div className="flex flex-col">
-                <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:xsm:block">
+                <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:xsm:block ">
                   Hasan Rifat
                 </h2>
-                <p className="mb-4 text-lg text-secondary">
+                <h2 className="mb-4 text-lg bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent font-semibold font-montserrat">
                   Frontend Developer
-                </p>
+                </h2>
                 <hr className="mb-4 opacity-5" />
-                <p className="mb-8 text-slate-400 text-justify ">
-                  Hello! I&apos;m Hasan Rifat, a dedicated{" "}
-                  <span className="text-lg ">Frontend Developer </span>
+                <p className="mb-8 text-slate-400 text-justify font-montserrat text-[15px]">
+                  Hello! I&apos;m Hasan Rifat, a dedicated{' '}
+                  <span className="font-semibold ">Frontend Developer </span>
                   with a strong passion for crafting exceptional digital
-                  experiences. With{" "}
+                  experiences. With{' '}
                   <span className="text-xl  text-secondary">1.5+</span> years of
                   experience in frontend development, I thrive on turning ideas
                   into reality through clean code and innovative design. My

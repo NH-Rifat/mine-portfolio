@@ -1,21 +1,21 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-import Image from "next/image";
-import { useRef } from "react";
-import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
+import Image from 'next/image';
+import { useRef } from 'react';
+import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
 
-import { IoMdClose } from "react-icons/io";
-import { Autoplay, Navigation } from "swiper/modules";
+import { IoMdClose } from 'react-icons/io';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 const PoolImgSlider = ({ imgList, setShowModal }) => {
   console.log({ imgList });
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const prevRef = useRef();
+  const nextRef = useRef();
 
   return (
     <div className="relative block h-full w-full">
