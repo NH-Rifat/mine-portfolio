@@ -1,3 +1,4 @@
+import { SectionHeader } from '@/components/reusable';
 import { portfolioProjects } from '@/utils/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,16 +12,23 @@ const Works = () => {
       <section id="portfolio" className="section bg-secondary-2  relative">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title before:content-portfolio  relative before:absolute before:opacity-40 before:-top-[2rem]  before:-left-[108%] before:lg:-left-3/4  before:hidden before:sm:block ">
-              My latest work
+            <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem]  before:-left-[108%] before:lg:-left-[50%]  before:hidden before:sm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent font-body">
+              Real World Results
             </h2>
-            <p className="subtitle font-montserrat">
+            <SectionHeader
+              eyebrow={'My Skills'}
+              title={'Featured Projects'}
+              description={
+                'See how I transformed concept into digital reality with my skills and experience.'
+              }
+            />
+            {/* <p className="subtitle font-montserrat">
               Following projects showcases my skills and experience through
               real-world examples of my work. Each project is briefly described
               with links to code repositories and live demos in it. It reflects
               my ability to solve complex problems, work with different
               technologies, and manage projects effectively.
-            </p>
+            </p> */}
           </div>
           {/* gradient start */}
           <div className="absolute z-[1] w-[30%] h-[30%] rounded-full top-0 white__gradient bottom-40" />

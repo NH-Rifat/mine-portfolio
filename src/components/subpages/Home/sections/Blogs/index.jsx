@@ -1,3 +1,4 @@
+import { SectionHeader } from '@/components/reusable';
 import { PinContainer } from '@/components/ui/Pin';
 import { blogsData } from '@/utils/data';
 import Image from 'next/image';
@@ -9,15 +10,22 @@ const Blogs = () => {
     <section id="blogs" className="py-10 2xsm:py-20 bg-secondary-3 relative">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <h2 className="section-title before:content-blogs  relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-1/2 before:hidden before:2xsm:block">
+          <h2 className="section-title before:content-blogs  relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-1/2 before:hidden before:2xsm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text  text-transparent">
             My Blogs
           </h2>
-          <p className="subtitle font-montserrat">
+          <SectionHeader
+            eyebrow={'My Skills'}
+            title="
+            Explore My Blogs
+            "
+            description={'Explore my blogs to elevate your development skills'}
+          />
+          {/* <p className="subtitle font-montserrat">
             Explore our blogs to elevate your development skills, gain clarity
             on various topics, and become a confident developer proficient in
             utilizing diverse technologies. Learn and persevere in discovering
             the essence of engineering excellence at its finest.
-          </p>
+          </p> */}
         </div>
         <div className="px-32">
           <div className="flex flex-wrap items-center justify-center p-4 gap-16 ">
