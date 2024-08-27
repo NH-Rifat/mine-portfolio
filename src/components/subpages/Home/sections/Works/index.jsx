@@ -58,7 +58,7 @@ const Works = () => {
                       </span>
                       <span className="font-sans">{project?.year}</span>
                     </div>
-                    <h3 className="font-sans text-2xl mt-2 md:mt-5 md:text-4xl">
+                    <h3 className="font-sans text-2xl mt-2 md:mt-5 md:text-4xl capitalize">
                       {project?.title}
                     </h3>
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
@@ -75,7 +75,7 @@ const Works = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link href={'/'}>
+                    <Link href={project?.link} target="_blank">
                       <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6 font-montserrat">
                         <span>Visit Live Site</span>
                         <MdOutlineArrowOutward className="text-lg sm:text-xl ml-2" />
