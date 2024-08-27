@@ -35,7 +35,7 @@ const Contact = () => {
     <section className="section bg-secondary-2 relative" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:sm:block">
+          <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:sm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text  text-transparent">
             Contact me
           </h2>
           <p className="subtitle font-montserrat">
@@ -55,7 +55,7 @@ const Contact = () => {
                     {icon}
                   </div>
                   <div>
-                    <h4 className=" text-xl mb-1 font-sans">{title}</h4>
+                    <h4 className=" text-xl mb-1 font-sans ">{title}</h4>
                     <p className="mb-1 text-paragraph font-body ">{subtitle}</p>
                     <p className="text-secondary font-body ">{description}</p>
                   </div>

@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-bg z-10 relative">
       <section
         id="home"
-        className="hero-main-bg h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
+        className="hero-main-bg h-[85vh] xsm:h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
       >
         <div className="container relative ">
           <div className="flex justify-center items-center flex-col-reverse lg:flex-row">
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="absolute z-[1] w-[50%] h-[50%] rounded-full top-0 white__gradient bottom-40" />
             <div className="absolute z-[0] w-[30%] h-[30%] left-0 top-0 blue__gradient" />
             {/* gradient end */}
-            <div className="w-full h-full md:w-2/3 md:h-2/3 lg:w-1/2 lg:h-1/2 ml-10 ">
+            <div className="w-full h-full md:w-2/3 md:h-2/3 lg:w-1/2 lg:h-1/2 sm:ml-10 ">
               <Shapes />
             </div>
           </div>

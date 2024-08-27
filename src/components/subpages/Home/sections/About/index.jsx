@@ -1,7 +1,7 @@
-import { Button } from '@/components/reusable';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Link } from 'react-scroll';
 import aboutIMage from '/public/assets/about/about.svg';
-
 const About = () => {
   return (
     <div>
@@ -18,7 +18,7 @@ const About = () => {
                 <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:xsm:block ">
                   Hasan Rifat
                 </h2>
-                <h2 className="mb-4 text-lg bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent font-semibold font-montserrat">
+                <h2 className="mb-4 text-lg bg-gradient-to-r from-secondary to-sky-400 bg-clip-text  text-transparent font-semibold font-montserrat">
                   Frontend Developer
                 </h2>
                 <hr className="mb-4 opacity-5" />
@@ -44,13 +44,28 @@ const About = () => {
                   learn and determined to find core engineering beauty at best.{" "} */}
                   <br />
                   <br />
-                  Let&apos;s connect and build something amazing together!
+                  {/* Let&apos;s connect and build something amazing together! */}
+                  {/* <Button
+                    text="Let's Connect"
+                    styles="btn btn-md hover:bg-secondary-hover transition-all px-8"
+                  /> */}
+                  <button className="button-shine py-3 px-4 font-montserrat  font-semibold text-[17px] text-tertiary active:scale-75 bg-gradient-to-r from-sky-400 to-emerald-300 rounded-[7px] outline-none btn btn-md hover:bg-secondary-hover transition-all ">
+                    <motion.div>
+                      <Link
+                        to={'contact'}
+                        activeclass="active"
+                        spy={true}
+                        smooth={true}
+                        duration={1100}
+                        offset={-70}
+                        className="transition-all duration-500"
+                      >
+                        {"Let's Connect"}
+                      </Link>
+                    </motion.div>
+                  </button>
                 </p>
               </div>
-              <Button
-                text="Contact Me"
-                styles="btn btn-md hover:bg-secondary-hover transition-all px-8"
-              />
             </div>
           </div>
         </div>

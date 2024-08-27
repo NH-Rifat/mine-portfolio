@@ -1,7 +1,6 @@
-import { navigation } from "@/utils/data";
-import React from "react";
-import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { navigation } from '@/utils/data';
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   return (
@@ -19,9 +18,9 @@ const Nav = () => {
                   activeclass="active"
                   spy={true}
                   smooth={true}
-                  duration={500}
+                  duration={1100}
                   offset={-70}
-                  className="transition-all duration-300"
+                  className="transition-all duration-1000"
                 >
                   {item.name}
                 </Link>
