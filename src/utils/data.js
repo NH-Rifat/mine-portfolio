@@ -30,8 +30,8 @@ import tailwind from '/public/assets/tech/tailwind.png';
 
 // project images
 import Project2 from '/public/assets/projects/fishmyspot.png';
-import Project3 from '/public/assets/projects/shoprowley.png';
-import Project1 from '/public/assets/projects/tourfam.png';
+import Project4 from '/public/assets/projects/marriage.png';
+import Project1 from '/public/assets/projects/shoprowly.png';
 
 // navigation
 export const navigation = [
@@ -246,40 +246,48 @@ export const social = [
 
 export const portfolioProjects = [
   {
-    company: 'Acme Corp',
+    company: 'Fish My Spot',
     year: '2022',
-    title: 'Dark Saas Landing Page',
+    title: 'Fishing experience marketplace',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      {
+        title: 'Connect families with unique fishing experiences',
+      },
+      { title: 'Connects pond owner and families' },
+      {
+        title:
+          'Convenient for adults and children to get outside and enjoy nature',
+      },
     ],
-    link: 'https://youtu.be/4k7IdSLxh6w',
-    image: Project1,
-  },
-  {
-    company: 'Innovative Co',
-    year: '2021',
-    title: 'Light Saas Landing Page',
-    results: [
-      { title: 'Boosted sales by 20%' },
-      { title: 'Expanded customer reach by 35%' },
-      { title: 'Increased brand awareness by 15%' },
-    ],
-    link: 'https://youtu.be/7hi5zwO75yc',
+    link: 'https://www.fishmyspot.com/',
     image: Project2,
   },
   {
-    company: 'Quantum Dynamics',
-    year: '2023',
-    title: 'AI Startup Landing Page',
+    company: 'Settle Marriage',
+    year: '2024',
+    title: 'A modern Marriage media',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Comprehensive Profiles' },
+      { title: 'Find Match Discovery' },
+      { title: 'Secure and Confidential' },
     ],
-    link: 'https://youtu.be/Z7I5uSRHMHg',
-    image: Project3,
+    link: 'https://www.settlemarriage.com/',
+    image: Project4,
+  },
+  {
+    company: 'Shop Rowley',
+    year: '2023',
+    title: 'A Versatile Marketplace',
+    results: [
+      { title: 'Pre-loved wedding wear for every celebration.' },
+      {
+        title:
+          'Connect with fellow brides and chat with buyers interested in your items.',
+      },
+      { title: 'Offer Negotiation between seller and buyers' },
+    ],
+    link: 'https://shoprowely.com/',
+    image: Project1,
   },
 ];
 export const blogsData = [
