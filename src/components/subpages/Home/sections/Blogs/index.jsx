@@ -37,9 +37,9 @@ const Blogs = () => {
                 <PinContainer link="https://learnwithhasan.com">
                   <>
                     <Link href={item.link} target="_blank">
-                      <div className="relative flex items-center justify-center overflow-hidden mb-10">
+                      <div className="relative flex items-center justify-center overflow-hidden -mb-8 xsm:mb-2 lg:mb-10">
                         <div
-                          className="relative  lg:rounded-3xl sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh]"
+                          className="relative  lg:rounded-3xl sm:w-96 w-[80vw] overflow-hidden h-[27vh] lg:h-[30vh]"
                           style={{ backgroundColor: '#13162D' }}
                         >
                           <Image
@@ -73,32 +73,27 @@ const Blogs = () => {
                         {item.des}
                       </p>
 
-                      <div className="flex items-center justify-between mt-7 mb-3">
-                        <div className="flex items-center">
-                          {item.iconLists.map((icon, index) => (
-                            <div
-                              key={index}
-                              className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                              style={{
-                                transform: `translateX(-${5 * index + 2}px)`,
-                              }}
-                            >
-                              <Image
-                                src={icon}
-                                alt="icon5"
-                                className="p-2"
-                                layout="fill"
-                              />
+                      <div className="flex flex-col xs:flex-row justify-between mt-7 mb-3">
+                        <div className="flex items-center space-x-2">
+                          {item.tags.map((item, index) => (
+                            <div key={index}>
+                              <p className="text-gray-900 font-medium bg-gradient-to-r from-emerald-300 to-sky-400 text-sm px-2 py-[1px] rounded-full font-sans">
+                                #{item}
+                              </p>
                             </div>
                           ))}
                         </div>
 
-                        <div className="flex justify-center items-center">
-                          <p className="flex lg:text-xl md:text-xs text-sm text-purple font-sans bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent">
-                            Check Live Site
+                        <div className="xs:flex justify-center items-center hidden ">
+                          <p className="flex lg:text-xl text-lg text-purple font-sans bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent">
+                            Click to Read
                           </p>
-                          <FaLocationArrow className="ms-3" color="#CBACF9" />
+                          <FaLocationArrow className="ms-3" color="#1da9e0" />
                         </div>
+                        <button className="bg-gradient-to-r from-sky-400 to-emerald-300 xs:hidden  text-gray-950 h-10 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 md:w-auto px-6 font-montserrat">
+                          <span>Click to Read</span>
+                          <FaLocationArrow className="ms-3" color="#000" />
+                        </button>
                       </div>
                     </Link>
                   </>

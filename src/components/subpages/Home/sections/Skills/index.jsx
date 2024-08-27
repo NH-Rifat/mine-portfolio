@@ -4,73 +4,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
 import CardHeader from './CardHeader';
-import JavascriptIcon from '/public/assets/icons/html5.svg';
 import BookCover from '/public/assets/images/book-cover.png';
 import mapImage from '/public/assets/images/map.png';
 import smileEmoji from '/public/assets/images/memoji-smile.png';
-
-const toolboxItems = [
-  {
-    title: 'Javascript',
-    iconType: JavascriptIcon,
-  },
-  {
-    title: 'React',
-    iconType: JavascriptIcon,
-  },
-  // {
-  //   title: 'Node',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Express',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'MongoDB',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Firebase',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'HTML',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'CSS',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Sass',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Tailwind',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Git',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Github',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Figma',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Photoshop',
-  //   iconType: JavascriptIcon,
-  // },
-  // {
-  //   title: 'Illustrator',
-  //   iconType: JavascriptIcon,
-  // },
-];
 
 const hobbies = [
   {
@@ -80,16 +16,16 @@ const hobbies = [
     top: '80%',
   },
   {
+    title: 'Writing',
+    emoji: '✍️',
+    left: '',
+    top: '',
+  },
+  {
     title: 'Traveling',
     emoji: '✈️',
     left: '50%',
     top: '5%',
-  },
-  {
-    title: 'Photography',
-    emoji: '📸',
-    left: '10%',
-    top: '35%',
   },
   {
     title: 'Music',
@@ -110,115 +46,11 @@ const hobbies = [
     top: '65%',
   },
   {
-    title: 'Hiking',
-    emoji: '🥾',
-    left: '45%',
-    top: '70%',
+    title: 'Movies',
+    emoji: '🎥',
+    left: '',
+    top: '',
   },
-  // {
-  //   title: 'Gaming',
-  //   emoji: '🎮',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Movies',
-  //   emoji: '🎥',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Art',
-  //   emoji: '🎨',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Writing',
-  //   emoji: '✍️',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Gardening',
-  //   emoji: '🌱',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Meditation',
-  //   emoji: '🧘',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Yoga',
-  //   emoji: '🧘',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Dancing',
-  //   emoji: '💃',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Cycling',
-  //   emoji: '🚴',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Swimming',
-  //   emoji: '🏊',
-  //   left: '',
-  //   top: '',
-  // },
-  // {
-  //   title: 'Skiing',
-  //   emoji: '⛷️',
-  // },
-  // {
-  //   title: 'Snowboarding',
-  //   emoji: '🏂',
-  // },
-  // {
-  //   title: 'Skateboarding',
-  //   emoji: '🛹',
-  // },
-  // {
-  //   title: 'Surfing',
-  //   emoji: '🏄',
-  // },
-  // {
-  //   title: 'Sailing',
-  //   emoji: '⛵',
-  // },
-  // {
-  //   title: 'Scuba Diving',
-  //   emoji: '🤿',
-  // },
-  // {
-  //   title: 'Skydiving',
-  //   emoji: '🪂',
-  // },
-  // {
-  //   title: 'Bungee Jumping',
-  //   emoji: '🪂',
-  // },
-  // {
-  //   title: 'Paragliding',
-  //   emoji: '🪂',
-  // },
-  // {
-  //   title: 'Rock Climbing',
-  //   emoji: '🧗',
-  // },
-  // {
-  //   title: 'Mountaineering',
-  //   emoji: '🧗',
-  // }
 ];
 
 const Skills = () => {
@@ -226,7 +58,7 @@ const Skills = () => {
   return (
     <section className="bg-secondary-3 py-10 xsm:py-20 relative" id="skills">
       <div className="flex flex-col items-center text-center">
-        <h2 className="section-title before:content-skills relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-[35%] before:hidden before:xsm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent uppercase font-semibold">
+        <h2 className="section-title before:content-skills relative before:absolute before:opacity-10 before:-top-[2rem] before:-left-[35%] before:hidden before:xsm:block bg-gradient-to-r from-sky-400 to-emerald-300 bg-clip-text text-center text-transparent uppercase font-semibold">
           My Skills
         </h2>
         {/* <p className="subtitle">
@@ -247,7 +79,7 @@ const Skills = () => {
       {/* <div className="absolute z-[1] w-[30%] h-[30%] rounded-full top-0 right-[10%] white__gradient bottom-40" />
       <div className="absolute z-[0] w-[20%] h-[20%] left-[35%] top-16 blue__gradient" /> */}
       {/* gradient end */}
-      <div className="container">
+      <div className="container mx-auto">
         <div className=" px-0 lg:px-16 xl:px-24 2xl:px-40">
           <SectionHeader
             eyebrow={'My Skills'}
@@ -256,14 +88,14 @@ const Skills = () => {
               'Learn more about who I am, what I do, and what inspires me.'
             }
           />
-          <div className="mt-20 flex flex-col gap-8">
+          <div className="mt-10 md:mt-14 flex flex-col gap-8">
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
               <Card className="h-[320px] md:col-span-2 lg:col-span-1 ">
                 <CardHeader
                   title="My Reads"
                   description="Explore the books shaping my perspective"
                 />
-                <div className="w-40 mx-auto -mt-2 md:-mt-3 relative h-44 overflow-hidden z-[20]">
+                <div className="w-40 mx-auto mt-7 md:-mt-0 lg:-mt-3 relative h-44 overflow-hidden z-[20]">
                   <Image
                     src={BookCover}
                     alt="Books"

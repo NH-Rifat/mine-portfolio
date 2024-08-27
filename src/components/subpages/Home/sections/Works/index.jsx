@@ -12,7 +12,7 @@ const Works = () => {
       <section id="portfolio" className="section bg-secondary-2  relative">
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem]  before:-left-[108%] before:lg:-left-[50%]  before:hidden before:sm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-center text-transparent font-body">
+            <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-[108%] before:lg:-left-[50%]  before:hidden before:sm:block bg-gradient-to-r from-sky-400 to-emerald-300 bg-clip-text text-center text-transparent font-body">
               Real World Results
             </h2>
             <SectionHeader
@@ -34,7 +34,7 @@ const Works = () => {
           <div className="absolute z-[1] w-[30%] h-[30%] rounded-full top-0 white__gradient bottom-40" />
           <div className="absolute z-[0] w-[20%] h-[20%] left-10 top-0 blue__gradient" />
           {/* gradient end */}
-          <div className="flex flex-col gap-20 md:mt-10">
+          <div className="flex flex-col gap-20 mt-5 md:mt-10">
             {portfolioProjects?.map((project, index) => (
               <div
                 className="bg-secondary-2 rounded-3xl sticky z-[0] after:-z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20       after:pointer-events-none"

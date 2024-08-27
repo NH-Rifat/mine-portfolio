@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 // import contact data
-import { Button } from '@/components/reusable';
+import { Button, SectionHeader } from '@/components/reusable';
 import { contact } from '@/utils/data';
 import { toast } from 'react-toastify';
 
@@ -35,17 +35,26 @@ const Contact = () => {
     <section className="section bg-secondary-2 relative" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:sm:block bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text  text-transparent">
+          <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:sm:block bg-gradient-to-r from-sky-400 to-emerald-300 bg-clip-text  text-transparent">
             Contact me
           </h2>
-          <p className="subtitle font-montserrat">
+          <SectionHeader
+            eyebrow={'My Skills'}
+            title="
+            Get in touch with me!
+            "
+            description={
+              "Feel free to drop me a message and let's start building something great together"
+            }
+          />
+          {/* <p className="subtitle font-montserrat">
             Get in touch with me! I&apos;am here to answer any questions,
             discuss potential collaborations, or just chat about all things
             tech. Drop me a message and let&apos;s start building something
             great together
-          </p>
+          </p> */}
         </div>
-        <div className="flex flex-col lg:gap-x-0 md:flex-row">
+        <div className="flex flex-col lg:gap-x-0 md:flex-row mt-10">
           <div className="flex mx-auto flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
             {contact?.map((item, index) => {
               const { icon, title, subtitle, description } = item;
@@ -63,12 +72,8 @@ const Contact = () => {
               );
             })}
           </div>
-          <form
-            className="space-y-8 w-full md:w-5/6 xl:w-full max-w-[780px] font-sans"
-            ref={form}
-            onSubmit={sendEmail}
-          >
-            <div className="flex gap-8">
+          <form className="font-sans space-y-7" ref={form} onSubmit={sendEmail}>
+            <div className="flex flex-col md:flex-row  gap-8">
               <input
                 className="input"
                 type="text"

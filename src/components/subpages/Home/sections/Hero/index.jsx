@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-bg z-10 relative">
       <section
         id="home"
-        className="hero-main-bg h-[85vh] xsm:h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
+        className="hero-main-bg h-[95vh] xsm:h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
       >
         <div className="container relative ">
           <div className="flex justify-center items-center flex-col-reverse lg:flex-row">
@@ -16,7 +16,7 @@ const Hero = () => {
                   Hey, I am Hasan Rifat! 👋
                 </p>
               </div>
-              <h1 className="text-gradient font-primary text-3xl 2xsm:text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-5xl xl:text-6xl 2xl:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] xl:">
+              <h1 className="text-gradient font-primary text-3xl 2xsm:text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-5xl xl:text-6xl 2xl:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] bg-gradient-to-r from-sky-400 to-emerald-300 bg-clip-text text-center text-transparent">
                 I Build & Develop <br /> Web Applications.
               </h1>
               <p className="pt-4 pb-8 md:pt-6 md:pb-2 lg:pb-10 max-w-[480px] text-base sm:text-lg text-center lg:text-left text-white font-montserrat">
