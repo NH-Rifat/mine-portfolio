@@ -1,21 +1,24 @@
 //  icons
+import { CgWebsite } from 'react-icons/cg';
 import {
-  FiDribbble,
   FiGithub,
-  FiInstagram,
   FiLayout,
+  FiLinkedin,
   FiPenTool,
   FiSettings,
   FiTag,
-  FiYoutube,
 } from 'react-icons/fi';
 
 import { IoIosMail } from 'react-icons/io';
 import { IoLocationOutline } from 'react-icons/io5';
 // skills images
+import cloud from '/public/assets/blogs/cloud.svg';
+import dock from '/public/assets/blogs/dock.svg';
+import gsap from '/public/assets/blogs/gsap.svg';
+import nextjs from '/public/assets/blogs/next.svg';
+import typescript from '/public/assets/blogs/ts.svg';
 import css from '/public/assets/tech/css.png';
-import docker from '/public/assets/tech/docker.png';
-import figma from '/public/assets/tech/figma.png';
+import framerMotion from '/public/assets/tech/framer-motion.png';
 import git from '/public/assets/tech/git.png';
 import html from '/public/assets/tech/html.png';
 import javascript from '/public/assets/tech/javascript.png';
@@ -24,8 +27,6 @@ import nodejs from '/public/assets/tech/nodejs.png';
 import reactjs from '/public/assets/tech/reactjs.png';
 import redux from '/public/assets/tech/redux.png';
 import tailwind from '/public/assets/tech/tailwind.png';
-import threejs from '/public/assets/tech/threejs.svg';
-import typescript from '/public/assets/tech/typescript.png';
 
 // project images
 import Project2 from '/public/assets/projects/fishmyspot.png';
@@ -64,20 +65,16 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
-  },
-  {
-    icon: <FiInstagram />,
-    href: '',
-  },
-  {
     icon: <FiGithub />,
-    href: '',
+    href: 'https://github.com/NH-Rifat',
   },
   {
-    icon: <FiDribbble />,
-    href: '',
+    icon: <FiLinkedin />,
+    href: 'https://www.linkedin.com/in/hasan205/',
+  },
+  {
+    icon: <CgWebsite />,
+    href: 'https://hasan-rifat.vercel.app/',
   },
 ];
 
@@ -298,6 +295,7 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/gsap.svg',
     ],
+    tags: ['javascript', 'advanced'],
     link: '/',
   },
 
@@ -313,6 +311,7 @@ export const blogsData = [
       '/assets/blogs/stream.svg',
       '/assets/blogs/c.svg',
     ],
+    tags: ['react', 'advanced'],
     link: '/',
   },
   {
@@ -327,6 +326,7 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/c.svg',
     ],
+    tags: ['javascript', 'fundamentals'],
     link: '/',
   },
   {
@@ -341,6 +341,7 @@ export const blogsData = [
       '/assets/blogs/three.svg',
       '/assets/blogs/fm.svg',
     ],
+    tags: ['react', 'fundamentals'],
     link: '/',
   },
 ];
@@ -450,12 +451,28 @@ export const technologies = [
     icon: reactjs,
   },
   {
+    name: 'Next JS',
+    icon: nextjs,
+  },
+  {
     name: 'Redux Toolkit',
     icon: redux,
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
+  },
+  {
+    name: 'Framer Motion',
+    icon: framerMotion,
+  },
+  {
+    name: 'GSAP',
+    icon: gsap,
+  },
+  {
+    name: 'cloud',
+    icon: cloud,
   },
   {
     name: 'Node JS',
@@ -466,20 +483,12 @@ export const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
     name: 'git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
+    name: 'Docker',
+    icon: dock,
   },
 ];
 

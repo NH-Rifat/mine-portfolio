@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from 'react';
 
-import { HiOutlineXMark } from "react-icons/hi2";
-import { IoMenuSharp } from "react-icons/io5";
+import { HiOutlineXMark } from 'react-icons/hi2';
+import { IoMenuSharp } from 'react-icons/io5';
 
-import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-import Socials from "../Socials";
-import { navigation } from "@/utils/data";
+import { navigation } from '@/utils/data';
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import Socials from '../Socials';
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const NavMobile = () => {
     visible: {
       scale: 180,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 160,
         damping: 60,
       },
@@ -48,16 +48,16 @@ const NavMobile = () => {
       <motion.div
         variants={circleVariants}
         initial="hidden"
-        animate={isOpen ? "visible" : "hidden"}
-        className="w-4 h-4 rounded-full bg-secondary fixed top-0 right-0"
+        animate={isOpen ? 'visible' : 'hidden'}
+        className="w-4 h-4 rounded-full bg-gray-900 fixed top-0 right-0"
       ></motion.div>
 
       <motion.ul
         variants={ulVariants}
         initial="hidden"
-        animate={isOpen ? "visible" : ""}
+        animate={isOpen ? 'visible' : ''}
         className={`${
-          isOpen ? "right-0" : "-right-full"
+          isOpen ? 'right-0' : '-right-full'
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
         <div
@@ -72,9 +72,10 @@ const NavMobile = () => {
               <Link
                 to={item.href}
                 smooth={true}
-                duration={500}
+                duration={1100}
                 offset={-70}
                 className="text-xl cursor-pointer capitalize"
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>

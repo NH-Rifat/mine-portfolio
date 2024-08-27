@@ -1,5 +1,5 @@
-import { social } from "@/utils/data";
-import React from "react";
+import { social } from '@/utils/data';
+import Link from 'next/link';
 
 const Socials = () => {
   return (
@@ -10,9 +10,9 @@ const Socials = () => {
             className="flex justify-center items-center text-secondary"
             key={index}
           >
-            <a className="text-base" href={item.href}>
+            <Link target="_blank" className="text-base" href={item.href}>
               {item.icon}
-            </a>
+            </Link>
           </li>
         );
       })}

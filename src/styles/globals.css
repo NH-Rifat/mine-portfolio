@@ -34,10 +34,10 @@ h6 {
   @apply h-[48px];
 }
 .input {
-  @apply bg-primary-2 text-white h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-md focus:outline focus:outline-1 focus:outline-dimBlue;
+  @apply bg-primary-2 text-white h-[50px] bg-transparent outline outline-2 outline-white/10 outline-none pl-6 w-full font-body text-[15px] rounded-md focus:outline focus:outline-1 focus:outline-dimBlue;
 }
 .textarea {
-  @apply bg-primary-2 text-white resize-none w-full outline-none p-6 rounded-md h-[200px] focus:outline focus:outline-1 focus:outline-dimBlue;
+  @apply bg-primary-2 text-white resize-none w-full bg-transparent outline outline-2 outline-white/10 outline-none p-6 rounded-md h-[200px] focus:outline focus:outline-1 focus:outline-dimBlue;
 }
 .active {
   @apply text-secondary;
