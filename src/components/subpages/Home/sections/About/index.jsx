@@ -24,14 +24,14 @@ const About = () => {
                 <hr className="mb-4 opacity-5" />
                 <p className="mb-8 text-slate-400 text-justify font-montserrat text-[15px]">
                   Hello! I&apos;m Hasan Rifat, a dedicated{' '}
-                  <span className="font-semibold ">Frontend Developer </span>
+                  <span className="font-semibold ">Web Developer </span>
                   with a strong passion for crafting exceptional digital
                   experiences. With{' '}
-                  <span className="text-xl  text-secondary">1.5+</span> years of
+                  <span className="text-xl  text-secondary">2.5+</span> years of
                   experience in frontend development, I thrive on turning ideas
                   into reality through clean code and innovative design. My
-                  journey in frontend development began with a fascination for
-                  the intersection of technology and creativity, and since then,
+                  journey in web development began with a fascination for the
+                  intersection of technology and creativity, and since then,
                   I&apos;ve been on a mission to create user-centric solutions
                   that leave a lasting impact. When I&apos;m not coding, you can
                   find me exploring the latest trends in frontend development,
