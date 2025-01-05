@@ -27,7 +27,7 @@ const Blogs = () => {
             the essence of engineering excellence at its finest.
           </p> */}
         </div>
-        <div className="px-32">
+        <div className="xl:px-32">
           <div className="flex flex-wrap items-center justify-center p-4 gap-16 ">
             {blogsData?.map((item) => (
               <div

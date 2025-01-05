@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-bg z-10 relative">
       <section
         id="home"
-        className="hero-main-bg h-[95vh] xsm:h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
+        className="hero-main-bg h-[100vh] lg:h-[85vh] flex justify-center items-center bg-primary lg:bg-cover bg-center bg-no-repeat "
       >
         <div className="container relative ">
           <div className="flex justify-center items-center flex-col-reverse lg:flex-row">
