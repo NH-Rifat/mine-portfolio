@@ -19,7 +19,7 @@ const About = () => {
                   Hasan Rifat
                 </h2>
                 <h2 className="mb-4 text-lg bg-gradient-to-r from-secondary to-sky-400 bg-clip-text  text-transparent font-semibold font-montserrat">
-                  Frontend Developer
+                  Full Stack Developer
                 </h2>
                 <hr className="mb-4 opacity-5" />
                 <p className="mb-8 text-slate-400 text-justify font-montserrat text-[15px]">
@@ -28,13 +28,13 @@ const About = () => {
                   with a strong passion for crafting exceptional digital
                   experiences. With{' '}
                   <span className="text-xl  text-secondary">2.5+</span> years of
-                  experience in frontend development, I thrive on turning ideas
-                  into reality through clean code and innovative design. My
-                  journey in web development began with a fascination for the
+                  experience in application development, I thrive on turning
+                  ideas into reality through clean code and innovative design.
+                  My journey in web development began with a fascination for the
                   intersection of technology and creativity, and since then,
                   I&apos;ve been on a mission to create user-centric solutions
                   that leave a lasting impact. When I&apos;m not coding, you can
-                  find me exploring the latest trends in frontend development,
+                  find me exploring the latest trends in software development,
                   experimenting with new technologies, or simply enjoying a good
                   cup of coffee.
                   {/* I will put my sincere effort to do
